@@ -18,9 +18,25 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Statistics"
+  course = "PhD, Statistics"
   institution = "The Ohio State University"
   year = 2014
+  
+[[education.courses]]
+  course = "MS, Statistics"
+  institution = "The Ohio State University"
+  year = 2010
+  
+[[education.courses]]
+  course = "MS, Mathematics"
+  institution = "Miami University"
+  year = 2008
+  
+[[education.courses]]
+  course = "BA, Education & BS, Maethematics & Statistics"
+  institution = "Miami University"
+  year = 2006
+
 
 # [[education.courses]]
 #   course = ""
