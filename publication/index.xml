@@ -11,20 +11,20 @@
     <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Comparing multiple statistical methods for inverse prediction in nuclear forensics applications</title>
-      <link>/publication/chem_comparing_multiple/</link>
-      <pubDate>Wed, 20 Dec 2017 19:26:28 -0700</pubDate>
-      
-      <guid>/publication/chem_comparing_multiple/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Selecting an Informative/Discriminating Multivariate Response For Inverse Prediction</title>
       <link>/publication/jqt_selecting_response/</link>
       <pubDate>Wed, 01 Nov 2017 17:53:54 -0700</pubDate>
       
       <guid>/publication/jqt_selecting_response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparing multiple statistical methods for inverse prediction in nuclear forensics applications</title>
+      <link>/publication/chem_comparing_multiple/</link>
+      <pubDate>Sun, 29 Oct 2017 19:26:28 -0700</pubDate>
+      
+      <guid>/publication/chem_comparing_multiple/</guid>
       <description></description>
     </item>
     
