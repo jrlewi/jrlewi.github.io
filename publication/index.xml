@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on John R. Lewis</title>
-    <link>https://jrlewi.github.io/publication/</link>
+    <link>/publication/</link>
     <description>Recent content in Publications on John R. Lewis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,47 +12,47 @@
     
     <item>
       <title>Selecting an Informative/Discriminating Multivariate Response For Inverse Prediction</title>
-      <link>https://jrlewi.github.io/publication/jqt_selecting_response/</link>
+      <link>/publication/jqt_selecting_response/</link>
       <pubDate>Wed, 01 Nov 2017 17:53:54 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/publication/jqt_selecting_response/</guid>
+      <guid>/publication/jqt_selecting_response/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Comparing multiple statistical methods for inverse prediction in nuclear forensics applications</title>
-      <link>https://jrlewi.github.io/publication/chem_comparing_multiple/</link>
+      <link>/publication/chem_comparing_multiple/</link>
       <pubDate>Sun, 29 Oct 2017 19:26:28 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/publication/chem_comparing_multiple/</guid>
+      <guid>/publication/chem_comparing_multiple/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Uncertainty Quantification and Comparison of Weld Residual Stress Measurements and  Predictions</title>
-      <link>https://jrlewi.github.io/publication/pvp_uq_wrs/</link>
+      <link>/publication/pvp_uq_wrs/</link>
       <pubDate>Sat, 01 Jul 2017 19:39:17 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/publication/pvp_uq_wrs/</guid>
+      <guid>/publication/pvp_uq_wrs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian Restricted Likelihood Methods</title>
-      <link>https://jrlewi.github.io/publication/brlm/</link>
+      <link>/publication/brlm/</link>
       <pubDate>Tue, 01 Jul 2014 20:01:00 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/publication/brlm/</guid>
+      <guid>/publication/brlm/</guid>
       <description>&lt;p&gt;A technical report version of this work is available on the pdf link. It is currently still under revision for publication.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Robust Inference via the Blended Paradigm</title>
-      <link>https://jrlewi.github.io/publication/robust_inference_blended/</link>
+      <link>/publication/robust_inference_blended/</link>
       <pubDate>Sat, 01 Dec 2012 20:21:06 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/publication/robust_inference_blended/</guid>
+      <guid>/publication/robust_inference_blended/</guid>
       <description></description>
     </item>
     

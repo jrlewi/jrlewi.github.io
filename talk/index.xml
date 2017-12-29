@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks on John R. Lewis</title>
-    <link>https://jrlewi.github.io/talk/</link>
+    <link>/talk/</link>
     <description>Recent content in Recent &amp; Upcoming Talks on John R. Lewis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,55 +12,64 @@
     
     <item>
       <title>Statistical Applications at Sandia</title>
-      <link>https://jrlewi.github.io/talk/2017_stat_apps_uiuc/</link>
+      <link>/talk/2017_stat_apps_uiuc/</link>
       <pubDate>Wed, 27 Sep 2017 14:36:40 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/talk/2017_stat_apps_uiuc/</guid>
+      <guid>/talk/2017_stat_apps_uiuc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Handling Missing Data in Self-Exciting Temporal Point Processes</title>
-      <link>https://jrlewi.github.io/talk/2017_jsm_handling_missing_data/</link>
+      <link>/talk/2017_jsm_handling_missing_data/</link>
       <pubDate>Mon, 31 Jul 2017 14:45:29 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/talk/2017_jsm_handling_missing_data/</guid>
+      <guid>/talk/2017_jsm_handling_missing_data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Brief Intro to Projects within Rstudio</title>
+      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
+      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
+      
+      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selecting an Informative/Discriminating Multivariate Response for Inverse Prediction</title>
-      <link>https://jrlewi.github.io/talk/2016_jsm_select_inform_response/</link>
+      <link>/talk/2016_jsm_select_inform_response/</link>
       <pubDate>Wed, 03 Aug 2016 15:19:37 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/talk/2016_jsm_select_inform_response/</guid>
+      <guid>/talk/2016_jsm_select_inform_response/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Blended Paradigm: Robust Bayesian Modeling using Non-Sufficient Statistics</title>
-      <link>https://jrlewi.github.io/talk/2014_cooley/</link>
+      <link>/talk/2014_cooley/</link>
       <pubDate>Tue, 08 Apr 2014 15:27:29 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/talk/2014_cooley/</guid>
+      <guid>/talk/2014_cooley/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian Inference via the Blended Paradigm</title>
-      <link>https://jrlewi.github.io/talk/2013_jsm_blended_paradigm/</link>
+      <link>/talk/2013_jsm_blended_paradigm/</link>
       <pubDate>Mon, 05 Aug 2013 15:42:28 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/talk/2013_jsm_blended_paradigm/</guid>
+      <guid>/talk/2013_jsm_blended_paradigm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robust Inference via the Blended Paradigm</title>
-      <link>https://jrlewi.github.io/talk/2012_jsm_blended_paradigm/</link>
+      <link>/talk/2012_jsm_blended_paradigm/</link>
       <pubDate>Sun, 29 Jul 2012 15:42:40 -0700</pubDate>
       
-      <guid>https://jrlewi.github.io/talk/2012_jsm_blended_paradigm/</guid>
+      <guid>/talk/2012_jsm_blended_paradigm/</guid>
       <description></description>
     </item>
     
