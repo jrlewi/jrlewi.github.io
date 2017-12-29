@@ -32,6 +32,15 @@
     
     <url>
     
+      <loc>/talk/2017_rprojects_stat_science_stat_seminar/</loc>
+      <lastmod>2017-07-18T15:02:20-07:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/pvp_uq_wrs/</loc>
       <lastmod>2017-07-01T19:39:17-07:00</lastmod>
     </url>
@@ -52,6 +61,15 @@
     
       <loc>/post/storing-and-plotting-functional-data-using-tibble/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/chem_comparing_multiple/</loc>
+      <lastmod>2017-01-01T19:26:28-07:00</lastmod>
     </url>
     
   
@@ -179,7 +197,7 @@
     
     <url>
     
-      <loc>/categories/brlm/</loc>
+      <loc>/tags/brlm/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -189,7 +207,7 @@
     
     <url>
     
-      <loc>/tags/brlm/</loc>
+      <loc>/categories/brlm/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -209,7 +227,7 @@
     
     <url>
     
-      <loc>/categories/functional-data/</loc>
+      <loc>/tags/functional-data/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -219,7 +237,7 @@
     
     <url>
     
-      <loc>/tags/functional-data/</loc>
+      <loc>/categories/functional-data/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -249,16 +267,6 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
-      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/tags/r/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -269,7 +277,7 @@
     
     <url>
     
-      <loc>/categories/restricted-likelihood/</loc>
+      <loc>/categories/r/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -289,6 +297,16 @@
     
     <url>
     
+      <loc>/categories/restricted-likelihood/</loc>
+      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -299,7 +317,7 @@
     
     <url>
     
-      <loc>/categories/tidyverse/</loc>
+      <loc>/tags/tidyverse/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -309,7 +327,7 @@
     
     <url>
     
-      <loc>/tags/tidyverse/</loc>
+      <loc>/categories/tidyverse/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
