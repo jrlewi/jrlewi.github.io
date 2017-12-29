@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="author" content="John R. Lewis">
+  <meta name="description" content="Senior Member of Technical Staff">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-111591330-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="John R. Lewis">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="John R. Lewis">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@_jrlewi">
+  <meta property="twitter:creator" content="@_jrlewi">
+  
+  <meta property="og:site_name" content="John R. Lewis">
+  <meta property="og:url" content="/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/">
+  <meta property="og:title" content="A Quick Intro to Robust Bayesian Models via Conditioning on Insufficient Statistics | John R. Lewis">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2017-05-28T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2017-05-28T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>A Quick Intro to Robust Bayesian Models via Conditioning on Insufficient Statistics | John R. Lewis</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">John R. Lewis</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#talks">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/pdf/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">A Quick Intro to Robust Bayesian Models via Conditioning on Insufficient Statistics</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-05-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      May 28, 2017
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/#disqus_thread"></a>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/restricted-likelihood">restricted likelihood</a
+    >, 
+    
+    <a href="/categories/brlm">brlm</a
+    >, 
+    
+    <a href="/categories/r">R</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=A%20Quick%20Intro%20to%20Robust%20Bayesian%20Models%20via%20Conditioning%20on%20Insufficient%20Statistics&amp;url=%2fpost%2fa-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fa-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fa-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics%2f&amp;title=A%20Quick%20Intro%20to%20Robust%20Bayesian%20Models%20via%20Conditioning%20on%20Insufficient%20Statistics"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fa-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics%2f&amp;title=A%20Quick%20Intro%20to%20Robust%20Bayesian%20Models%20via%20Conditioning%20on%20Insufficient%20Statistics"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=A%20Quick%20Intro%20to%20Robust%20Bayesian%20Models%20via%20Conditioning%20on%20Insufficient%20Statistics&amp;body=%2fpost%2fa-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        <p>Conditioning on robust summaries of the data in a Bayesian model is one way to achieve robustness to model miss-specification. I have called this the “restricted likelihood” <a href="http://www.stat.osu.edu/~yklee/mss/tr878.pdf">here</a> and <a href="https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;disposition=inline">here</a> since the full data likelihood is replaced with the likelihood conditioned on only the robust summary (i.e. a restricted likelihood).</p>
+<p>One of the easiest examples to conceptualize is outliers in a univariate setting. Suppose the true data generating mechanism is a contaminated normal:</p>
+<p><span class="math display">\[y_1, y_2, \dots, y_n \sim (1-p)N(\mu, \sigma^2) + pN(\mu, c\sigma^2)\]</span></p>
+<p>with <span class="math inline">\(c&gt;1\)</span> and we are interested in estimating <span class="math inline">\(\mu\)</span>. Since we don’t know the data generating mechanism exactly we just decide to fit the simple normal Bayesian model:</p>
+<p><span class="math display">\[\mu \sim N(\eta, \tau^2),\]</span></p>
+<p><span class="math display">\[\sigma^2\sim IG(\alpha, \beta),\]</span></p>
+<p><span class="math display">\[y_1, y_2, \dots, y_n \sim N(\mu, \sigma^2)\]</span></p>
+<p>Of course each data point gives information about <span class="math inline">\(\mu\)</span> but the data coming from the contamination component gives less information about <span class="math inline">\(\mu\)</span>. Since we are fitting the wrong model it’s probably not good to treat these data points the same. In robust statistics, estimators like the median, trimmed-mean, or M-estimators down-weight outliers in a more or less automatic sense. In an analogous fashion, a Bayesian could condition on these robust summaries instead of the entire data set <span class="math inline">\(Y=(y_1, y_2, \dots, y_n)\)</span>. Though we have developed fitting methods to condition on such statistics (see above links to papers), for this post let’s condition on a middling set of order statistics <span class="math inline">\(T(Y)=(y_{(k)},y_{(k+1)},\dots, y_{(n-k)})\)</span>. The reasons being are 1) this is one of the first things I tried when starting to think about these problems and 2) the model is easy to fit since the pdf of a set of order statistics is analytically tractable (i.e. the restricted likelihood). This is not the case for many robust statistics like M-estimators).</p>
+<p>The full posterior (conditioning on the full data) is <span class="math inline">\(\pi(\theta|Y)\propto \pi(\theta)f(Y|\theta)\)</span> with <span class="math inline">\(\theta = (\mu, \sigma^2)\)</span> while the “restricted posterior” is <span class="math inline">\(\pi(\theta|T(Y))\propto \pi(\theta)f(T(Y)|\theta)\)</span> with <span class="math inline">\(f(T(Y)|\theta)\)</span> just the pdf of the set of order-statistics. The function <a href="https://github.com/jrlewi/brlm/blob/master/R/fitOrderStat.R"><code>fitOrderStatistics</code></a> in the (still developing) <a href="https://github.com/jrlewi/brlm"><code>brlm</code></a> package can be used to fit both of these models on a grid.</p>
+<div id="demonstration" class="section level1">
+<h1>Demonstration</h1>
+<p>Let’s load the required packages and generate some data from the contaminated distribution:</p>
+<pre class="r"><code>library(reshape2)
+library(tidyverse)</code></pre>
+<pre><code>## Loading tidyverse: ggplot2
+## Loading tidyverse: tibble
+## Loading tidyverse: tidyr
+## Loading tidyverse: readr
+## Loading tidyverse: purrr
+## Loading tidyverse: dplyr</code></pre>
+<pre><code>## Conflicts with tidy packages ----------------------------------------------</code></pre>
+<pre><code>## filter(): dplyr, stats
+## lag():    dplyr, stats</code></pre>
+<pre class="r"><code>library(RColorBrewer)
+#library(devtools); install_github(&quot;jrlewi/brlm&quot;) if needed. brlm=Bayesian Restricted Likelihood Methods.
+library(brlm)
+
+
+plotCors &lt;- brewer.pal(9, &#39;Set1&#39;) #plot colors
+#function to generated the contaminated data
+gen_data &lt;- function(n,mu, sigma, p, c){
+  out &lt;- rbinom(n, 1, p)
+  sapply(out, function(ot) ifelse(ot, rnorm(1,mu, sqrt(c)*sigma), rnorm(1,mu, sigma)))
+}
+
+set.seed(8675309) #the Jenny seed :)
+
+n &lt;- 100
+mu &lt;-0
+sigma &lt;-1
+p &lt;- .2
+c &lt;- 10
+y &lt;- gen_data(n,mu, sigma, p, c)
+ggplot(as_tibble(y), aes(x = value)) + geom_histogram(col = 1, fill = plotCors[2])</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/gen%20data-1.png" width="672" /></p>
+<p>Now we can fit the models. The parameter <code>k</code> specifies the set of middling order statistics. Setting <code>k=0</code> fits the full normal model.</p>
+<pre class="r"><code>mu_lims &lt;- c(mu - sigma, mu + sigma) # play around with these since we are fitting on a grid. Just need to make sure grid covers support of non-zero posterior mass - MCMC would avoid this :) 
+length_mu &lt;- 100
+sigma2_lims &lt;- c(.1, 5)
+length_sigma2 &lt;- 100
+
+# fixed prior parameters
+eta &lt;- 2; tau &lt;- 10; alpha &lt;- 5; beta &lt;- 5
+k &lt;- floor(.1*n)
+
+
+fitFull &lt;- fitOrderStat(y,k=0, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+
+fitRest &lt;- fitOrderStat(y,k=k, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+
+post_mu &lt;- tibble(mu = fitRest$muPost[,1], restricted = fitRest$muPost[, 2], full = fitFull$muPost[,2])
+post_mu &lt;- melt(post_mu, id.vars = c(&#39;mu&#39;), variable.name = &#39;posterior&#39;)
+
+post_sigma2 &lt;- tibble(sigma2 = fitRest$sigma2Post[,1], restricted = fitRest$sigma2Post[, 2], full = fitFull$sigma2Post[,2])
+post_sigma2 &lt;- melt(post_sigma2 , id.vars = c(&#39;sigma2&#39;), variable.name = &#39;posterior&#39;)
+
+
+(p_post_mu &lt;- ggplot(post_mu, aes(x = mu, y = value,  col = posterior)) + geom_line() +
+  geom_vline(xintercept = mu, lty = 2) +
+    xlim(c(mu - sigma, mu + sigma)))</code></pre>
+<p><img src="/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/fit%20models-1.png" width="672" /></p>
+<pre class="r"><code>(p_post_sigma2 &lt;- ggplot(post_sigma2, aes(x = sigma2, y = value,  col = posterior)) + 
+    geom_line() +
+    geom_vline(xintercept = sigma^2, lty = 2) +
+    xlim(c(0, 5)))</code></pre>
+<p><img src="/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/fit%20models-2.png" width="672" /></p>
+<p>We see the posterior for <span class="math inline">\(\mu\)</span> under the restricted posterior is more precise. This is related to the fact that estimation of <span class="math inline">\(\sigma^2\)</span> is also improved under the restricted posterior.</p>
+<p>Now suppose that the full model gets the likelihood correct - that is, the data are generated from a single normal:</p>
+<pre class="r"><code>set.seed(123)
+y &lt;- rnorm(n, mu, sigma)
+
+fitFull_n &lt;- fitOrderStat(y,k=0, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+
+fitRest_n &lt;- fitOrderStat(y,k=k, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+
+post_mu_n &lt;- tibble(mu = fitRest_n$muPost[,1], restricted = fitRest_n$muPost[, 2], full = fitFull_n$muPost[,2])
+post_mu_n &lt;- melt(post_mu_n, id.vars = c(&#39;mu&#39;), variable.name = &#39;posterior&#39;)
+
+post_sigma2_n &lt;- tibble(sigma2 = fitRest_n$sigma2Post[,1], restricted = fitRest_n$sigma2Post[, 2], full = fitFull_n$sigma2Post[,2])
+post_sigma2_n &lt;- melt(post_sigma2_n , id.vars = c(&#39;sigma2&#39;), variable.name = &#39;posterior&#39;)
+
+
+(p_post_mu_n &lt;- ggplot(post_mu_n, aes(x = mu, y = value,  col = posterior)) + geom_line() +
+  geom_vline(xintercept = mu, lty = 2) +
+    xlim(c(mu - sigma, mu + sigma)))</code></pre>
+<p><img src="/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/normal%20data-1.png" width="672" /></p>
+<pre class="r"><code>(p_post_sigma2_n &lt;- ggplot(post_sigma2_n, aes(x = sigma2, y = value,  col = posterior)) + 
+    geom_line() +
+    geom_vline(xintercept = sigma^2, lty = 2) +
+    xlim(c(0, 5)))</code></pre>
+<p><img src="/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/normal%20data-2.png" width="672" /></p>
+<p>In this case - inference is essentially identical using either the restricted or full model - an often desired property of robust models.</p>
+</div>
+<div id="simulation" class="section level1">
+<h1>Simulation</h1>
+<p>It’s probably best to re-do the analysis over several data sets. Here we generate 100 data sets from the contaminated model, fit the full and restricted posteriors, and summarize the posterior means. We’ll also try some parallelization using <code>foreach</code>.</p>
+<pre class="r"><code>library(doParallel)</code></pre>
+<pre><code>## Loading required package: foreach</code></pre>
+<pre><code>## 
+## Attaching package: &#39;foreach&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:purrr&#39;:
+## 
+##     accumulate, when</code></pre>
+<pre><code>## Loading required package: iterators</code></pre>
+<pre><code>## Loading required package: parallel</code></pre>
+<pre class="r"><code>cl &lt;- makeCluster(detectCores())
+registerDoParallel(cl)
+n_sims &lt;- 100
+(tm &lt;- system.time({
+result &lt;- foreach(i = 1:n_sims, .combine = rbind, .packages = &#39;brlm&#39;) %dopar% {
+y &lt;- gen_data(n,mu, sigma, p, c)
+fitFull &lt;- fitOrderStat(y,k=0, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+fitRest &lt;- fitOrderStat(y,k=k, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)  
+c(fitFull$postMeans[1], fitRest$postMeans[1])
+}
+})[3])
+registerDoSEQ()
+
+result &lt;- tibble(full = result[,1], restricted = result[,2])
+result &lt;- reshape2::melt(result, variable.name = &#39;posterior&#39;, value.name = &#39;mean mu&#39;)</code></pre>
+<pre><code>## No id variables; using all as measure variables</code></pre>
+<pre class="r"><code>(g_sim &lt;- ggplot(result, aes(y = `mean mu`, x = posterior, fill = posterior)) + geom_boxplot())</code></pre>
+<p><img src="/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/simulation-1.png" width="672" /></p>
+<pre><code>## elapsed 
+##   97.71</code></pre>
+<p>The means of the posterior means are roughly equal with smaller variance under the restricted posterior. The raw numbers are:</p>
+<pre class="r"><code>(sumry &lt;- as.data.frame(result) %&gt;% group_by(posterior) %&gt;% dplyr::summarise(mean = mean(`mean mu`), sd=sd(`mean mu`)))</code></pre>
+<pre><code>## # A tibble: 2 x 3
+##    posterior        mean        sd
+##       &lt;fctr&gt;       &lt;dbl&gt;     &lt;dbl&gt;
+## 1       full 0.007373827 0.1488590
+## 2 restricted 0.016813200 0.1263784</code></pre>
+<p>We see a reduction in standard deviation of roughly 15.1<span class="math inline">\(\%\)</span> under the restricted posterior.</p>
+</div>
+<div id="summary" class="section level1">
+<h1>Summary</h1>
+<p>This was just a brief intro to the ideas and potential advantages of restricted likelihood methods. Conditioning on order statistics is conceptually simple and easy to implement since the pdf of order statistics is known. The choice of which order statistics to condition on is up for discussion. I have also developed MCMC methods to condition on M-estimators in regression settings (see <a href="http://www.stat.osu.edu/~yklee/mss/tr878.pdf">this</a> or <a href="https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;disposition=inline">this</a>). Implementation in this settings is more difficult since the likelihood conditioned on such estimators is intractable. Code implementing some of these methods can be found <a href="https://github.com/jrlewi/brlm">here</a> or <a href="https://github.com/jrlewi/brlmPaperCode">here</a>.</p>
+</div>
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/restricted-likelihood">restricted likelihood</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/brlm">brlm</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/r">R</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/storing-and-plotting-functional-data-using-tibble/">Storing and Plotting Functional Data using Tibble</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jrlewi-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 John R. Lewis &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//jrlewi-github-io.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

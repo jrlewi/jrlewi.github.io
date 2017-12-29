@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>John R. Lewis on John R. Lewis</title>
+    <link>/</link>
+    <description>Recent content in John R. Lewis on John R. Lewis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 John R. Lewis</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Comparing multiple statistical methods for inverse prediction in nuclear forensics applications</title>
+      <link>/publication/chem_comparing_multiple/</link>
+      <pubDate>Mon, 01 Jan 2018 19:26:28 -0700</pubDate>
+      
+      <guid>/publication/chem_comparing_multiple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selecting an Informative/Discriminating Multivariate Response For Inverse Prediction</title>
+      <link>/publication/jqt_selecting_response/</link>
+      <pubDate>Wed, 01 Nov 2017 17:53:54 -0700</pubDate>
+      
+      <guid>/publication/jqt_selecting_response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical Applications at Sandia</title>
+      <link>/talk/2017_stat_apps_uiuc/</link>
+      <pubDate>Wed, 27 Sep 2017 14:36:40 -0700</pubDate>
+      
+      <guid>/talk/2017_stat_apps_uiuc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Handling Missing Data in Self-Exciting Temporal Point Processes</title>
+      <link>/talk/2017_jsm_handling_missing_data/</link>
+      <pubDate>Mon, 31 Jul 2017 14:45:29 -0700</pubDate>
+      
+      <guid>/talk/2017_jsm_handling_missing_data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Brief Intro to Projects within Rstudio</title>
+      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
+      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
+      
+      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncertainty Quantification and Comparison of Weld Residual Stress Measurements and  Predictions</title>
+      <link>/publication/pvp_uq_wrs/</link>
+      <pubDate>Sat, 01 Jul 2017 19:39:17 -0700</pubDate>
+      
+      <guid>/publication/pvp_uq_wrs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Quick Intro to Robust Bayesian Models via Conditioning on Insufficient Statistics</title>
+      <link>/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</guid>
+      <description>&lt;p&gt;Conditioning on robust summaries of the data in a Bayesian model is one way to achieve robustness to model miss-specification. I have called this the “restricted likelihood” &lt;a href=&#34;http://www.stat.osu.edu/~yklee/mss/tr878.pdf&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;amp;disposition=inline&#34;&gt;here&lt;/a&gt; since the full data likelihood is replaced with the likelihood conditioned on only the robust summary (i.e. a restricted likelihood).&lt;/p&gt;
+&lt;p&gt;One of the easiest examples to conceptualize is outliers in a univariate setting. Suppose the true data generating mechanism is a contaminated normal:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_1, y_2, \dots, y_n \sim (1-p)N(\mu, \sigma^2) + pN(\mu, c\sigma^2)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;with &lt;span class=&#34;math inline&#34;&gt;\(c&amp;gt;1\)&lt;/span&gt; and we are interested in estimating &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt;. Since we don’t know the data generating mechanism exactly we just decide to fit the simple normal Bayesian model:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mu \sim N(\eta, \tau^2),\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sigma^2\sim IG(\alpha, \beta),\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_1, y_2, \dots, y_n \sim N(\mu, \sigma^2)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Of course each data point gives information about &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; but the data coming from the contamination component gives less information about &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt;. Since we are fitting the wrong model it’s probably not good to treat these data points the same. In robust statistics, estimators like the median, trimmed-mean, or M-estimators down-weight outliers in a more or less automatic sense. In an analogous fashion, a Bayesian could condition on these robust summaries instead of the entire data set &lt;span class=&#34;math inline&#34;&gt;\(Y=(y_1, y_2, \dots, y_n)\)&lt;/span&gt;. Though we have developed fitting methods to condition on such statistics (see above links to papers), for this post let’s condition on a middling set of order statistics &lt;span class=&#34;math inline&#34;&gt;\(T(Y)=(y_{(k)},y_{(k+1)},\dots, y_{(n-k)})\)&lt;/span&gt;. The reasons being are 1) this is one of the first things I tried when starting to think about these problems and 2) the model is easy to fit since the pdf of a set of order statistics is analytically tractable (i.e. the restricted likelihood). This is not the case for many robust statistics like M-estimators).&lt;/p&gt;
+&lt;p&gt;The full posterior (conditioning on the full data) is &lt;span class=&#34;math inline&#34;&gt;\(\pi(\theta|Y)\propto \pi(\theta)f(Y|\theta)\)&lt;/span&gt; with &lt;span class=&#34;math inline&#34;&gt;\(\theta = (\mu, \sigma^2)\)&lt;/span&gt; while the “restricted posterior” is &lt;span class=&#34;math inline&#34;&gt;\(\pi(\theta|T(Y))\propto \pi(\theta)f(T(Y)|\theta)\)&lt;/span&gt; with &lt;span class=&#34;math inline&#34;&gt;\(f(T(Y)|\theta)\)&lt;/span&gt; just the pdf of the set of order-statistics. The function &lt;a href=&#34;https://github.com/jrlewi/brlm/blob/master/R/fitOrderStat.R&#34;&gt;&lt;code&gt;fitOrderStatistics&lt;/code&gt;&lt;/a&gt; in the (still developing) &lt;a href=&#34;https://github.com/jrlewi/brlm&#34;&gt;&lt;code&gt;brlm&lt;/code&gt;&lt;/a&gt; package can be used to fit both of these models on a grid.&lt;/p&gt;
+&lt;div id=&#34;demonstration&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Demonstration&lt;/h1&gt;
+&lt;p&gt;Let’s load the required packages and generate some data from the contaminated distribution:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(reshape2)
+library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading tidyverse: ggplot2
+## Loading tidyverse: tibble
+## Loading tidyverse: tidyr
+## Loading tidyverse: readr
+## Loading tidyverse: purrr
+## Loading tidyverse: dplyr&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Conflicts with tidy packages ----------------------------------------------&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## filter(): dplyr, stats
+## lag():    dplyr, stats&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(RColorBrewer)
+#library(devtools); install_github(&amp;quot;jrlewi/brlm&amp;quot;) if needed. brlm=Bayesian Restricted Likelihood Methods.
+library(brlm)
+
+
+plotCors &amp;lt;- brewer.pal(9, &amp;#39;Set1&amp;#39;) #plot colors
+#function to generated the contaminated data
+gen_data &amp;lt;- function(n,mu, sigma, p, c){
+  out &amp;lt;- rbinom(n, 1, p)
+  sapply(out, function(ot) ifelse(ot, rnorm(1,mu, sqrt(c)*sigma), rnorm(1,mu, sigma)))
+}
+
+set.seed(8675309) #the Jenny seed :)
+
+n &amp;lt;- 100
+mu &amp;lt;-0
+sigma &amp;lt;-1
+p &amp;lt;- .2
+c &amp;lt;- 10
+y &amp;lt;- gen_data(n,mu, sigma, p, c)
+ggplot(as_tibble(y), aes(x = value)) + geom_histogram(col = 1, fill = plotCors[2])&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/gen%20data-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Now we can fit the models. The parameter &lt;code&gt;k&lt;/code&gt; specifies the set of middling order statistics. Setting &lt;code&gt;k=0&lt;/code&gt; fits the full normal model.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mu_lims &amp;lt;- c(mu - sigma, mu + sigma) # play around with these since we are fitting on a grid. Just need to make sure grid covers support of non-zero posterior mass - MCMC would avoid this :) 
+length_mu &amp;lt;- 100
+sigma2_lims &amp;lt;- c(.1, 5)
+length_sigma2 &amp;lt;- 100
+
+# fixed prior parameters
+eta &amp;lt;- 2; tau &amp;lt;- 10; alpha &amp;lt;- 5; beta &amp;lt;- 5
+k &amp;lt;- floor(.1*n)
+
+
+fitFull &amp;lt;- fitOrderStat(y,k=0, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+
+fitRest &amp;lt;- fitOrderStat(y,k=k, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+
+post_mu &amp;lt;- tibble(mu = fitRest$muPost[,1], restricted = fitRest$muPost[, 2], full = fitFull$muPost[,2])
+post_mu &amp;lt;- melt(post_mu, id.vars = c(&amp;#39;mu&amp;#39;), variable.name = &amp;#39;posterior&amp;#39;)
+
+post_sigma2 &amp;lt;- tibble(sigma2 = fitRest$sigma2Post[,1], restricted = fitRest$sigma2Post[, 2], full = fitFull$sigma2Post[,2])
+post_sigma2 &amp;lt;- melt(post_sigma2 , id.vars = c(&amp;#39;sigma2&amp;#39;), variable.name = &amp;#39;posterior&amp;#39;)
+
+
+(p_post_mu &amp;lt;- ggplot(post_mu, aes(x = mu, y = value,  col = posterior)) + geom_line() +
+  geom_vline(xintercept = mu, lty = 2) +
+    xlim(c(mu - sigma, mu + sigma)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/fit%20models-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(p_post_sigma2 &amp;lt;- ggplot(post_sigma2, aes(x = sigma2, y = value,  col = posterior)) + 
+    geom_line() +
+    geom_vline(xintercept = sigma^2, lty = 2) +
+    xlim(c(0, 5)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/fit%20models-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We see the posterior for &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; under the restricted posterior is more precise. This is related to the fact that estimation of &lt;span class=&#34;math inline&#34;&gt;\(\sigma^2\)&lt;/span&gt; is also improved under the restricted posterior.&lt;/p&gt;
+&lt;p&gt;Now suppose that the full model gets the likelihood correct - that is, the data are generated from a single normal:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(123)
+y &amp;lt;- rnorm(n, mu, sigma)
+
+fitFull_n &amp;lt;- fitOrderStat(y,k=0, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+
+fitRest_n &amp;lt;- fitOrderStat(y,k=k, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+
+post_mu_n &amp;lt;- tibble(mu = fitRest_n$muPost[,1], restricted = fitRest_n$muPost[, 2], full = fitFull_n$muPost[,2])
+post_mu_n &amp;lt;- melt(post_mu_n, id.vars = c(&amp;#39;mu&amp;#39;), variable.name = &amp;#39;posterior&amp;#39;)
+
+post_sigma2_n &amp;lt;- tibble(sigma2 = fitRest_n$sigma2Post[,1], restricted = fitRest_n$sigma2Post[, 2], full = fitFull_n$sigma2Post[,2])
+post_sigma2_n &amp;lt;- melt(post_sigma2_n , id.vars = c(&amp;#39;sigma2&amp;#39;), variable.name = &amp;#39;posterior&amp;#39;)
+
+
+(p_post_mu_n &amp;lt;- ggplot(post_mu_n, aes(x = mu, y = value,  col = posterior)) + geom_line() +
+  geom_vline(xintercept = mu, lty = 2) +
+    xlim(c(mu - sigma, mu + sigma)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/normal%20data-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(p_post_sigma2_n &amp;lt;- ggplot(post_sigma2_n, aes(x = sigma2, y = value,  col = posterior)) + 
+    geom_line() +
+    geom_vline(xintercept = sigma^2, lty = 2) +
+    xlim(c(0, 5)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/normal%20data-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In this case - inference is essentially identical using either the restricted or full model - an often desired property of robust models.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulation&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Simulation&lt;/h1&gt;
+&lt;p&gt;It’s probably best to re-do the analysis over several data sets. Here we generate 100 data sets from the contaminated model, fit the full and restricted posteriors, and summarize the posterior means. We’ll also try some parallelization using &lt;code&gt;foreach&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(doParallel)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: foreach&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;foreach&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:purrr&amp;#39;:
+## 
+##     accumulate, when&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: iterators&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: parallel&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cl &amp;lt;- makeCluster(detectCores())
+registerDoParallel(cl)
+n_sims &amp;lt;- 100
+(tm &amp;lt;- system.time({
+result &amp;lt;- foreach(i = 1:n_sims, .combine = rbind, .packages = &amp;#39;brlm&amp;#39;) %dopar% {
+y &amp;lt;- gen_data(n,mu, sigma, p, c)
+fitFull &amp;lt;- fitOrderStat(y,k=0, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)
+fitRest &amp;lt;- fitOrderStat(y,k=k, mu_lims,length_mu, sigma2_lims,length_sigma2, eta, tau, alpha, beta)  
+c(fitFull$postMeans[1], fitRest$postMeans[1])
+}
+})[3])
+registerDoSEQ()
+
+result &amp;lt;- tibble(full = result[,1], restricted = result[,2])
+result &amp;lt;- reshape2::melt(result, variable.name = &amp;#39;posterior&amp;#39;, value.name = &amp;#39;mean mu&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## No id variables; using all as measure variables&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(g_sim &amp;lt;- ggplot(result, aes(y = `mean mu`, x = posterior, fill = posterior)) + geom_boxplot())&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/simulation-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## elapsed 
+##   97.71&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The means of the posterior means are roughly equal with smaller variance under the restricted posterior. The raw numbers are:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(sumry &amp;lt;- as.data.frame(result) %&amp;gt;% group_by(posterior) %&amp;gt;% dplyr::summarise(mean = mean(`mean mu`), sd=sd(`mean mu`)))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 2 x 3
+##    posterior        mean        sd
+##       &amp;lt;fctr&amp;gt;       &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1       full 0.007373827 0.1488590
+## 2 restricted 0.016813200 0.1263784&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We see a reduction in standard deviation of roughly 15.1&lt;span class=&#34;math inline&#34;&gt;\(\%\)&lt;/span&gt; under the restricted posterior.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;summary&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Summary&lt;/h1&gt;
+&lt;p&gt;This was just a brief intro to the ideas and potential advantages of restricted likelihood methods. Conditioning on order statistics is conceptually simple and easy to implement since the pdf of order statistics is known. The choice of which order statistics to condition on is up for discussion. I have also developed MCMC methods to condition on M-estimators in regression settings (see &lt;a href=&#34;http://www.stat.osu.edu/~yklee/mss/tr878.pdf&#34;&gt;this&lt;/a&gt; or &lt;a href=&#34;https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;amp;disposition=inline&#34;&gt;this&lt;/a&gt;). Implementation in this settings is more difficult since the likelihood conditioned on such estimators is intractable. Code implementing some of these methods can be found &lt;a href=&#34;https://github.com/jrlewi/brlm&#34;&gt;here&lt;/a&gt; or &lt;a href=&#34;https://github.com/jrlewi/brlmPaperCode&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Storing and Plotting Functional Data using Tibble</title>
+      <link>/post/storing-and-plotting-functional-data-using-tibble/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/storing-and-plotting-functional-data-using-tibble/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html&#34;&gt;tibble package&lt;/a&gt; within the &lt;a href=&#34;http://tidyverse.org/&#34;&gt;the tidyverse&lt;/a&gt; provides ‘a modern take on data frames.’ It’s loaded with nice features, one of which is the ability to store list-columns. List-columns provide a concise way to store lists within a row of a data frame. In particular, this is useful for storing functional data because a common feature in such data is that each function is not collected at the same number of points. As an example, let’s simulate some sinusoids:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+## Loading tidyverse: ggplot2
+## Loading tidyverse: tibble
+## Loading tidyverse: tidyr
+## Loading tidyverse: readr
+## Loading tidyverse: purrr
+## Loading tidyverse: dplyr
+## Conflicts with tidy packages ----------------------------------------------
+## filter(): dplyr, stats
+## lag():    dplyr, stats
+set.seed(123)
+n &amp;lt;- 5
+factor_1 &amp;lt;- c(rep(&amp;#39;A&amp;#39;, n), rep(&amp;#39;B&amp;#39;, n))
+
+response &amp;lt;- function(x,mu, A, B, C){
+  mu + A*sin(x*B + C)
+}
+
+out &amp;lt;- sapply(factor_1, function(y){
+n_pts &amp;lt;- floor(rnorm(1, 100, 10))
+x &amp;lt;- seq(-pi/2, pi/2, length.out = n_pts)
+mu &amp;lt;- ifelse(y == &amp;#39;A&amp;#39;,2,1)
+mu &amp;lt;- rnorm(1, mu, .1)
+A &amp;lt;- rnorm(1, 2, sd = .3)
+B &amp;lt;- rnorm(1, 3, sd = .3)
+C &amp;lt;- rnorm(1, pi/8, sd = .1)
+list(x = x, output = response(x,mu,A,B,C))
+})&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are 5 curves in each level of the factor factor_1 (A or B). The average difference in the two levels is a vertical mean shift and each function has some amplitude and horizontal variation. Each function has around 100 points but this varies. Tibble’s framework allows us to store this type of data concisely using list-columns:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tbl &amp;lt;- tibble(test = 1:length(factor_1),factor_1 = factor_1, x =  out[1,], y = out[2,])
+tbl&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 4
+##     test factor_1           x           y
+##    &amp;lt;int&amp;gt;    &amp;lt;chr&amp;gt;      &amp;lt;list&amp;gt;      &amp;lt;list&amp;gt;
+##  1     1        A  &amp;lt;dbl [94]&amp;gt;  &amp;lt;dbl [94]&amp;gt;
+##  2     2        A &amp;lt;dbl [117]&amp;gt; &amp;lt;dbl [117]&amp;gt;
+##  3     3        A &amp;lt;dbl [112]&amp;gt; &amp;lt;dbl [112]&amp;gt;
+##  4     4        A &amp;lt;dbl [117]&amp;gt; &amp;lt;dbl [117]&amp;gt;
+##  5     5        A  &amp;lt;dbl [89]&amp;gt;  &amp;lt;dbl [89]&amp;gt;
+##  6     6        B  &amp;lt;dbl [83]&amp;gt;  &amp;lt;dbl [83]&amp;gt;
+##  7     7        B &amp;lt;dbl [104]&amp;gt; &amp;lt;dbl [104]&amp;gt;
+##  8     8        B &amp;lt;dbl [106]&amp;gt; &amp;lt;dbl [106]&amp;gt;
+##  9     9        B  &amp;lt;dbl [93]&amp;gt;  &amp;lt;dbl [93]&amp;gt;
+## 10    10        B  &amp;lt;dbl [88]&amp;gt;  &amp;lt;dbl [88]&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Plotting the data with base R can be done easily enough:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;yrange &amp;lt;- range(sapply(tbl$y, function(y) range(y)))
+plot(NULL, type = &amp;#39;l&amp;#39;, col = 1, ylim = yrange, xlim = c(-pi/2,pi/2), ylab = &amp;#39;y&amp;#39;, xlab = &amp;#39;x&amp;#39;)
+for(i in 1:nrow(tbl)){
+  matplot(tbl$x[[i]], tbl$y[[i]], type = &amp;#39;l&amp;#39;, col = ifelse(tbl$factor_1[i] == &amp;#39;A&amp;#39;,1,2), add = TRUE)
+}
+grid()
+legend(&amp;#39;topright&amp;#39;, col = c(1,2), lty = 1, legend = c(&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;), title = &amp;#39;factor_1&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;While this is satisfactory, users of &lt;code&gt;ggplot2&lt;/code&gt; understand some of its &lt;a href=&#34;https://github.com/tidyverse/ggplot2/wiki/Why-use-ggplot2&#34;&gt;advantages over base graphics&lt;/a&gt;. When first thinking about plotting with &lt;code&gt;ggplot2&lt;/code&gt;, I was hoping this would work:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;gplot &amp;lt;- ggplot(tbl, aes(x = x,y = y, group = test, colour = factor_1)) + 
+  geom_line()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, this throws an error since the functions have different lengths. A work-around is to expand the tibble to fit the so-called &lt;a href=&#34;https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html&#34;&gt;tidy format&lt;/a&gt; with each observation on each function corresponding to a single row. Originally I was using &lt;code&gt;do.call()&lt;/code&gt; to do this. Then I happily discovered &lt;code&gt;tidyr::unnest&lt;/code&gt; (and its inverse &lt;code&gt;tidyr::nest&lt;/code&gt;):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# tbl2 &amp;lt;- do.call(rbind,apply(tbl,1, function(r) tibble(test = r$test, factor_1 = r$factor_1, x = r$x, y = r$y)))
+# tbl2
+
+(tbl2 &amp;lt;- unnest(tbl))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1,003 x 4
+##     test factor_1         x        y
+##    &amp;lt;int&amp;gt;    &amp;lt;chr&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;
+##  1     1        A -1.570796 4.275455
+##  2     1        A -1.537016 4.172024
+##  3     1        A -1.503235 4.045749
+##  4     1        A -1.469455 3.897947
+##  5     1        A -1.435674 3.730154
+##  6     1        A -1.401893 3.544116
+##  7     1        A -1.368113 3.341771
+##  8     1        A -1.334332 3.125223
+##  9     1        A -1.300552 2.896725
+## 10     1        A -1.266771 2.658657
+## # ... with 993 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Note: tbl2 %&amp;gt;% group_by(test, factor_1) %&amp;gt;% nest() or simply nest(tbl2, x,y) gets you back to tbl (almost...do you see what&amp;#39;s different?)
+(gplot &amp;lt;- ggplot(tbl2, aes(x = x,y = y, group = test, colour = factor_1)) + 
+    geom_line())&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This works well. One departing thought – In many cases functional data is collected at ~1e6 or more points and expanding the table as above could easily result in tens of millions of rows - with a bunch of redundant information in the first two columns ‘test’ and ‘factor_1.’ My guess is this really isn’t that big of an issue…but if you think it is, please let me know.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Selecting an Informative/Discriminating Multivariate Response for Inverse Prediction</title>
+      <link>/talk/2016_jsm_select_inform_response/</link>
+      <pubDate>Wed, 03 Aug 2016 15:19:37 -0700</pubDate>
+      
+      <guid>/talk/2016_jsm_select_inform_response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Restricted Likelihood Methods</title>
+      <link>/publication/brlm/</link>
+      <pubDate>Tue, 01 Jul 2014 20:01:00 -0700</pubDate>
+      
+      <guid>/publication/brlm/</guid>
+      <description>&lt;p&gt;A technical report version of this work is available on the pdf link. It is currently still under revision for publication.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Blended Paradigm: Robust Bayesian Modeling using Non-Sufficient Statistics</title>
+      <link>/talk/2014_cooley/</link>
+      <pubDate>Tue, 08 Apr 2014 15:27:29 -0700</pubDate>
+      
+      <guid>/talk/2014_cooley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Inference via the Blended Paradigm</title>
+      <link>/talk/2013_jsm_blended_paradigm/</link>
+      <pubDate>Mon, 05 Aug 2013 15:42:28 -0700</pubDate>
+      
+      <guid>/talk/2013_jsm_blended_paradigm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust Inference via the Blended Paradigm</title>
+      <link>/publication/robust_inference_blended/</link>
+      <pubDate>Sat, 01 Dec 2012 20:21:06 -0700</pubDate>
+      
+      <guid>/publication/robust_inference_blended/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust Inference via the Blended Paradigm</title>
+      <link>/talk/2012_jsm_blended_paradigm/</link>
+      <pubDate>Sun, 29 Jul 2012 15:42:40 -0700</pubDate>
+      
+      <guid>/talk/2012_jsm_blended_paradigm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
