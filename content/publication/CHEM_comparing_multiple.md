@@ -1,6 +1,6 @@
 +++
 title = "Comparing multiple statistical methods for inverse prediction in nuclear forensics applications"
-date = 2017-12-20T19:26:28-07:00
+date = 2017-10-29T19:26:28-07:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
