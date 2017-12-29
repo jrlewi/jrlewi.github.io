@@ -5,36 +5,36 @@ active = true
 date = "2016-04-20T00:00:00"
 
 # Order that this section will appear in.
-weight = 5
+weight = 1
 
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Bayesian Methods",
+    "Analysis of Computer Models",
+    "Functional Data",
+    "Inverse Problems"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "PhD in Statistics"
+  institution = "The Ohio State University"
+  year = 2014
 
-[[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
-
-[[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
- 
+# [[education.courses]]
+#   course = ""
+#   institution = ""
+#   year =
+# 
+# [[education.courses]]
+#   course = "BSc in Artificial Intelligence"
+#   institution = "Massachusetts Institute of Technology"
+#   year = 2008
+#  
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a senior member of the technical staff at Sandia National Laboratories. I eaned a Ph.D. in Statistics from The Ohio State University in 2014 where I developed 'Restricted Likelihood Methods' to condition on robust summary statistics in Bayesian models. Current work focuses on a number of areas including analysis of complex computer models, functional data analysis, space-time models, inverse problems. {{% staticref "pdf/cv.pdf" %}}My CV{{% /staticref %}}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 

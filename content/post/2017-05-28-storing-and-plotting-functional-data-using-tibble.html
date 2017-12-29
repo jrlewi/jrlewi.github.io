@@ -1,0 +1,98 @@
+---
+title: Storing and Plotting Functional Data using Tibble
+author: John Lewis
+date: '2017-05-28'
+slug: storing-and-plotting-functional-data-using-tibble
+categories:
+  - R
+  - tidyverse
+  - functional data
+tags:
+  - R
+  - tidyverse
+  - functional data
+---
+
+
+
+<p>The <a href="https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html">tibble package</a> within the <a href="http://tidyverse.org/">the tidyverse</a> provides ‘a modern take on data frames.’ It’s loaded with nice features, one of which is the ability to store list-columns. List-columns provide a concise way to store lists within a row of a data frame. In particular, this is useful for storing functional data because a common feature in such data is that each function is not collected at the same number of points. As an example, let’s simulate some sinusoids:</p>
+<pre class="r"><code>library(tidyverse)
+## Loading tidyverse: ggplot2
+## Loading tidyverse: tibble
+## Loading tidyverse: tidyr
+## Loading tidyverse: readr
+## Loading tidyverse: purrr
+## Loading tidyverse: dplyr
+## Conflicts with tidy packages ----------------------------------------------
+## filter(): dplyr, stats
+## lag():    dplyr, stats
+set.seed(123)
+n &lt;- 5
+factor_1 &lt;- c(rep(&#39;A&#39;, n), rep(&#39;B&#39;, n))
+
+response &lt;- function(x,mu, A, B, C){
+  mu + A*sin(x*B + C)
+}
+
+out &lt;- sapply(factor_1, function(y){
+n_pts &lt;- floor(rnorm(1, 100, 10))
+x &lt;- seq(-pi/2, pi/2, length.out = n_pts)
+mu &lt;- ifelse(y == &#39;A&#39;,2,1)
+mu &lt;- rnorm(1, mu, .1)
+A &lt;- rnorm(1, 2, sd = .3)
+B &lt;- rnorm(1, 3, sd = .3)
+C &lt;- rnorm(1, pi/8, sd = .1)
+list(x = x, output = response(x,mu,A,B,C))
+})</code></pre>
+<p>There are 5 curves in each level of the factor factor_1 (A or B). The average difference in the two levels is a vertical mean shift and each function has some amplitude and horizontal variation. Each function has around 100 points but this varies. Tibble’s framework allows us to store this type of data concisely using list-columns:</p>
+<pre class="r"><code>tbl &lt;- tibble(test = 1:length(factor_1),factor_1 = factor_1, x =  out[1,], y = out[2,])
+tbl</code></pre>
+<pre><code>## # A tibble: 10 x 4
+##     test factor_1           x           y
+##    &lt;int&gt;    &lt;chr&gt;      &lt;list&gt;      &lt;list&gt;
+##  1     1        A  &lt;dbl [94]&gt;  &lt;dbl [94]&gt;
+##  2     2        A &lt;dbl [117]&gt; &lt;dbl [117]&gt;
+##  3     3        A &lt;dbl [112]&gt; &lt;dbl [112]&gt;
+##  4     4        A &lt;dbl [117]&gt; &lt;dbl [117]&gt;
+##  5     5        A  &lt;dbl [89]&gt;  &lt;dbl [89]&gt;
+##  6     6        B  &lt;dbl [83]&gt;  &lt;dbl [83]&gt;
+##  7     7        B &lt;dbl [104]&gt; &lt;dbl [104]&gt;
+##  8     8        B &lt;dbl [106]&gt; &lt;dbl [106]&gt;
+##  9     9        B  &lt;dbl [93]&gt;  &lt;dbl [93]&gt;
+## 10    10        B  &lt;dbl [88]&gt;  &lt;dbl [88]&gt;</code></pre>
+<p>Plotting the data with base R can be done easily enough:</p>
+<pre class="r"><code>yrange &lt;- range(sapply(tbl$y, function(y) range(y)))
+plot(NULL, type = &#39;l&#39;, col = 1, ylim = yrange, xlim = c(-pi/2,pi/2), ylab = &#39;y&#39;, xlab = &#39;x&#39;)
+for(i in 1:nrow(tbl)){
+  matplot(tbl$x[[i]], tbl$y[[i]], type = &#39;l&#39;, col = ifelse(tbl$factor_1[i] == &#39;A&#39;,1,2), add = TRUE)
+}
+grid()
+legend(&#39;topright&#39;, col = c(1,2), lty = 1, legend = c(&#39;A&#39;,&#39;B&#39;), title = &#39;factor_1&#39;)</code></pre>
+<p><img src="/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>While this is satisfactory, users of <code>ggplot2</code> understand some of its <a href="https://github.com/tidyverse/ggplot2/wiki/Why-use-ggplot2">advantages over base graphics</a>. When first thinking about plotting with <code>ggplot2</code>, I was hoping this would work:</p>
+<pre class="r"><code>gplot &lt;- ggplot(tbl, aes(x = x,y = y, group = test, colour = factor_1)) + 
+  geom_line()</code></pre>
+<p>Unfortunately, this throws an error since the functions have different lengths. A work-around is to expand the tibble to fit the so-called <a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy format</a> with each observation on each function corresponding to a single row. Originally I was using <code>do.call()</code> to do this. Then I happily discovered <code>tidyr::unnest</code> (and its inverse <code>tidyr::nest</code>):</p>
+<pre class="r"><code># tbl2 &lt;- do.call(rbind,apply(tbl,1, function(r) tibble(test = r$test, factor_1 = r$factor_1, x = r$x, y = r$y)))
+# tbl2
+
+(tbl2 &lt;- unnest(tbl))</code></pre>
+<pre><code>## # A tibble: 1,003 x 4
+##     test factor_1         x        y
+##    &lt;int&gt;    &lt;chr&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+##  1     1        A -1.570796 4.275455
+##  2     1        A -1.537016 4.172024
+##  3     1        A -1.503235 4.045749
+##  4     1        A -1.469455 3.897947
+##  5     1        A -1.435674 3.730154
+##  6     1        A -1.401893 3.544116
+##  7     1        A -1.368113 3.341771
+##  8     1        A -1.334332 3.125223
+##  9     1        A -1.300552 2.896725
+## 10     1        A -1.266771 2.658657
+## # ... with 993 more rows</code></pre>
+<pre class="r"><code># Note: tbl2 %&gt;% group_by(test, factor_1) %&gt;% nest() or simply nest(tbl2, x,y) gets you back to tbl (almost...do you see what&#39;s different?)
+(gplot &lt;- ggplot(tbl2, aes(x = x,y = y, group = test, colour = factor_1)) + 
+    geom_line())</code></pre>
+<p><img src="/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>This works well. One departing thought – In many cases functional data is collected at ~1e6 or more points and expanding the table as above could easily result in tens of millions of rows - with a bunch of redundant information in the first two columns ‘test’ and ‘factor_1.’ My guess is this really isn’t that big of an issue…but if you think it is, please let me know.</p>
