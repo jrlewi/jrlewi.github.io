@@ -1,0 +1,14 @@
+base
+reshape2
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr
+RColorBrewer
+brlm
+foreach
+iterators
+doParallel

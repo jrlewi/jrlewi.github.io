@@ -151,15 +151,15 @@ result &amp;lt;- reshape2::melt(result, variable.name = &amp;#39;posterior&amp;#
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(g_sim &amp;lt;- ggplot(result, aes(y = `mean mu`, x = posterior, fill = posterior)) + geom_boxplot())&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/simulation-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## elapsed 
-##   97.71&lt;/code&gt;&lt;/pre&gt;
+## 171.625&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The means of the posterior means are roughly equal with smaller variance under the restricted posterior. The raw numbers are:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(sumry &amp;lt;- as.data.frame(result) %&amp;gt;% group_by(posterior) %&amp;gt;% dplyr::summarise(mean = mean(`mean mu`), sd=sd(`mean mu`)))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 2 x 3
-##    posterior        mean        sd
-##       &amp;lt;fctr&amp;gt;       &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
-## 1       full 0.007373827 0.1488590
-## 2 restricted 0.016813200 0.1263784&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We see a reduction in standard deviation of roughly 15.1&lt;span class=&#34;math inline&#34;&gt;\(\%\)&lt;/span&gt; under the restricted posterior.&lt;/p&gt;
+##    posterior         mean        sd
+##       &amp;lt;fctr&amp;gt;        &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1       full -0.005932405 0.1816344
+## 2 restricted  0.002674353 0.1485771&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We see a reduction in standard deviation of roughly 18.2&lt;span class=&#34;math inline&#34;&gt;\(\%\)&lt;/span&gt; under the restricted posterior.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;summary&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Summary&lt;/h1&gt;
