@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/publication/chem_comparing_multiple/</loc>
+      <lastmod>2017-12-20T19:26:28-07:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/jqt_selecting_response/</loc>
       <lastmod>2017-11-01T17:53:54-07:00</lastmod>
     </url>
@@ -52,15 +61,6 @@
     
       <loc>/post/storing-and-plotting-functional-data-using-tibble/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/publication/chem_comparing_multiple/</loc>
-      <lastmod>2017-01-01T19:26:28-07:00</lastmod>
     </url>
     
   
@@ -169,7 +169,7 @@
     <url>
     
       <loc>/publication_types/2/</loc>
-      <lastmod>2017-11-01T17:53:54-07:00</lastmod>
+      <lastmod>2017-12-20T19:26:28-07:00</lastmod>
       <priority>0</priority>
     </url>
     

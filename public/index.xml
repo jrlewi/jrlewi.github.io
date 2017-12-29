@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Comparing multiple statistical methods for inverse prediction in nuclear forensics applications</title>
+      <link>/publication/chem_comparing_multiple/</link>
+      <pubDate>Wed, 20 Dec 2017 19:26:28 -0700</pubDate>
+      
+      <guid>/publication/chem_comparing_multiple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Selecting an Informative/Discriminating Multivariate Response For Inverse Prediction</title>
       <link>/publication/jqt_selecting_response/</link>
       <pubDate>Wed, 01 Nov 2017 17:53:54 -0700</pubDate>
@@ -292,15 +301,6 @@ legend(&amp;#39;topright&amp;#39;, col = c(1,2), lty = 1, legend = c(&amp;#39;A&
 &lt;p&gt;&lt;img src=&#34;/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This works well. One departing thought – In many cases functional data is collected at ~1e6 or more points and expanding the table as above could easily result in tens of millions of rows - with a bunch of redundant information in the first two columns ‘test’ and ‘factor_1.’ My guess is this really isn’t that big of an issue…but if you think it is, please let me know.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Comparing multiple statistical methods for inverse prediction in nuclear forensics applications</title>
-      <link>/publication/chem_comparing_multiple/</link>
-      <pubDate>Sun, 01 Jan 2017 19:26:28 -0700</pubDate>
-      
-      <guid>/publication/chem_comparing_multiple/</guid>
-      <description></description>
     </item>
     
     <item>
