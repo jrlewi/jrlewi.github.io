@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on John R. Lewis</title>
-    <link>https://jrlewi.github.io/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on John R. Lewis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>A Quick Intro to Robust Bayesian Models via Conditioning on Insufficient Statistics</title>
-      <link>https://jrlewi.github.io/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</link>
+      <link>/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://jrlewi.github.io/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</guid>
+      <guid>/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</guid>
       <description>&lt;p&gt;Conditioning on robust summaries of the data in a Bayesian model is one way to achieve robustness to model miss-specification. I have called this the “restricted likelihood” &lt;a href=&#34;http://www.stat.osu.edu/~yklee/mss/tr878.pdf&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;amp;disposition=inline&#34;&gt;here&lt;/a&gt; since the full data likelihood is replaced with the likelihood conditioned on only the robust summary (i.e. a restricted likelihood).&lt;/p&gt;
 &lt;p&gt;One of the easiest examples to conceptualize is outliers in a univariate setting. Suppose the true data generating mechanism is a contaminated normal:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_1, y_2, \dots, y_n \sim (1-p)N(\mu, \sigma^2) + pN(\mu, c\sigma^2)\]&lt;/span&gt;&lt;/p&gt;
@@ -61,7 +61,7 @@ c &amp;lt;- 10
 y &amp;lt;- gen_data(n,mu, sigma, p, c)
 ggplot(as_tibble(y), aes(x = value)) + geom_histogram(col = 1, fill = plotCors[2])&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrlewi.github.io/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/gen%20data-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/gen%20data-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Now we can fit the models. The parameter &lt;code&gt;k&lt;/code&gt; specifies the set of middling order statistics. Setting &lt;code&gt;k=0&lt;/code&gt; fits the full normal model.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mu_lims &amp;lt;- c(mu - sigma, mu + sigma) # play around with these since we are fitting on a grid. Just need to make sure grid covers support of non-zero posterior mass - MCMC would avoid this :) 
 length_mu &amp;lt;- 100
@@ -87,12 +87,12 @@ post_sigma2 &amp;lt;- melt(post_sigma2 , id.vars = c(&amp;#39;sigma2&amp;#39;), 
 (p_post_mu &amp;lt;- ggplot(post_mu, aes(x = mu, y = value,  col = posterior)) + geom_line() +
   geom_vline(xintercept = mu, lty = 2) +
     xlim(c(mu - sigma, mu + sigma)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrlewi.github.io/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/fit%20models-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/fit%20models-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(p_post_sigma2 &amp;lt;- ggplot(post_sigma2, aes(x = sigma2, y = value,  col = posterior)) + 
     geom_line() +
     geom_vline(xintercept = sigma^2, lty = 2) +
     xlim(c(0, 5)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrlewi.github.io/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/fit%20models-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/fit%20models-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We see the posterior for &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; under the restricted posterior is more precise. This is related to the fact that estimation of &lt;span class=&#34;math inline&#34;&gt;\(\sigma^2\)&lt;/span&gt; is also improved under the restricted posterior.&lt;/p&gt;
 &lt;p&gt;Now suppose that the full model gets the likelihood correct - that is, the data are generated from a single normal:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(123)
@@ -112,12 +112,12 @@ post_sigma2_n &amp;lt;- melt(post_sigma2_n , id.vars = c(&amp;#39;sigma2&amp;#39
 (p_post_mu_n &amp;lt;- ggplot(post_mu_n, aes(x = mu, y = value,  col = posterior)) + geom_line() +
   geom_vline(xintercept = mu, lty = 2) +
     xlim(c(mu - sigma, mu + sigma)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrlewi.github.io/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/normal%20data-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/normal%20data-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(p_post_sigma2_n &amp;lt;- ggplot(post_sigma2_n, aes(x = sigma2, y = value,  col = posterior)) + 
     geom_line() +
     geom_vline(xintercept = sigma^2, lty = 2) +
     xlim(c(0, 5)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrlewi.github.io/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/normal%20data-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/normal%20data-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In this case - inference is essentially identical using either the restricted or full model - an often desired property of robust models.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;simulation&#34; class=&#34;section level1&#34;&gt;
@@ -149,7 +149,7 @@ result &amp;lt;- tibble(full = result[,1], restricted = result[,2])
 result &amp;lt;- reshape2::melt(result, variable.name = &amp;#39;posterior&amp;#39;, value.name = &amp;#39;mean mu&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## No id variables; using all as measure variables&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(g_sim &amp;lt;- ggplot(result, aes(y = `mean mu`, x = posterior, fill = posterior)) + geom_boxplot())&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrlewi.github.io/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/simulation-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics_files/figure-html/simulation-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## elapsed 
 ## 171.625&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The means of the posterior means are roughly equal with smaller variance under the restricted posterior. The raw numbers are:&lt;/p&gt;
@@ -170,10 +170,10 @@ result &amp;lt;- reshape2::melt(result, variable.name = &amp;#39;posterior&amp;#
     
     <item>
       <title>Storing and Plotting Functional Data using Tibble</title>
-      <link>https://jrlewi.github.io/post/storing-and-plotting-functional-data-using-tibble/</link>
+      <link>/post/storing-and-plotting-functional-data-using-tibble/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://jrlewi.github.io/post/storing-and-plotting-functional-data-using-tibble/</guid>
+      <guid>/post/storing-and-plotting-functional-data-using-tibble/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html&#34;&gt;tibble package&lt;/a&gt; within the &lt;a href=&#34;http://tidyverse.org/&#34;&gt;the tidyverse&lt;/a&gt; provides ‘a modern take on data frames.’ It’s loaded with nice features, one of which is the ability to store list-columns. List-columns provide a concise way to store lists within a row of a data frame. In particular, this is useful for storing functional data because a common feature in such data is that each function is not collected at the same number of points. As an example, let’s simulate some sinusoids:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 ## Loading tidyverse: ggplot2
@@ -227,7 +227,7 @@ for(i in 1:nrow(tbl)){
 }
 grid()
 legend(&amp;#39;topright&amp;#39;, col = c(1,2), lty = 1, legend = c(&amp;#39;A&amp;#39;,&amp;#39;B&amp;#39;), title = &amp;#39;factor_1&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrlewi.github.io/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;While this is satisfactory, users of &lt;code&gt;ggplot2&lt;/code&gt; understand some of its &lt;a href=&#34;https://github.com/tidyverse/ggplot2/wiki/Why-use-ggplot2&#34;&gt;advantages over base graphics&lt;/a&gt;. When first thinking about plotting with &lt;code&gt;ggplot2&lt;/code&gt;, I was hoping this would work:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;gplot &amp;lt;- ggplot(tbl, aes(x = x,y = y, group = test, colour = factor_1)) + 
   geom_line()&lt;/code&gt;&lt;/pre&gt;
@@ -253,7 +253,7 @@ legend(&amp;#39;topright&amp;#39;, col = c(1,2), lty = 1, legend = c(&amp;#39;A&
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Note: tbl2 %&amp;gt;% group_by(test, factor_1) %&amp;gt;% nest() or simply nest(tbl2, x,y) gets you back to tbl (almost...do you see what&amp;#39;s different?)
 (gplot &amp;lt;- ggplot(tbl2, aes(x = x,y = y, group = test, colour = factor_1)) + 
     geom_line())&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://jrlewi.github.io/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-28-storing-and-plotting-functional-data-using-tibble_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This works well. One departing thought – In many cases functional data is collected at ~1e6 or more points and expanding the table as above could easily result in tens of millions of rows - with a bunch of redundant information in the first two columns ‘test’ and ‘factor_1.’ My guess is this really isn’t that big of an issue…but if you think it is, please let me know.&lt;/p&gt;
 </description>
     </item>
