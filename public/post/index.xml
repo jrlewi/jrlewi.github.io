@@ -11,6 +11,181 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Yes, it is possible to build rep on SO</title>
+      <link>/post/yes-it-is-possible-to-build-rep-on-so/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/yes-it-is-possible-to-build-rep-on-so/</guid>
+      <description>&lt;p&gt;Since first using R about a decade ago, I have been a consistent consumer of information from &lt;a href=&#34;https://stackoverflow.com/&#34;&gt;stackoverflow (SO)&lt;/a&gt;. It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. Reasons for not asking questions essentially were:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Pretty much 99% of the questions I had, I could already find an answer to (on SO or elsewhere).&lt;/li&gt;
+&lt;li&gt;For the other 1%, I felt that there had to be an easy solution I missed and I’d get crushed for asking a stupid question. In these cases I resorted to sheer grit to find a solution and asking friends who I knew wouldn’t call me stupid.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Reasons for not answering questions essentially were:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;I had 1 rep, so who would listen?&lt;/li&gt;
+&lt;li&gt;I had 1 rep, so I couldn’t comment to clarify questions.&lt;/li&gt;
+&lt;li&gt;I had 1 rep, someone else with more rep would provide an answer.&lt;/li&gt;
+&lt;li&gt;Time (or selfishness) - I didn’t feel I had the time to answer questions that didn’t directly deal with the projects I was working on.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When it comes down to it, I was consuming free information and not being a contributor to said information. Recently however, I have had a surprisingly large amount of fun answering/asking questions on the relatively new &lt;a href=&#34;https://community.rstudio.com/&#34;&gt;Rstudio Community&lt;/a&gt;. This experience has been enjoyable and educational and I credit it with the straw that finally pushed me to become more active on SO. The timing could not have been more perfect since I had a winter break from work coming and was looking for something to fill some free time. Within a matter of a few days, I went from 1 rep, to 311, just by answering a few questions.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;repPage&lt;/a&gt; Add picture…of my rep page.&lt;/p&gt;
+&lt;p&gt;It turns out that:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;People listened regardless of my rep as long as I provided a good solution.&lt;/li&gt;
+&lt;li&gt;There are plenty of questions that you don’t need to comment on, and getting the 50 rep to comment is relatively easy.&lt;/li&gt;
+&lt;li&gt;My solution was often either the only one provided or was well received compared to other solutions from those with lots more rep than me.&lt;/li&gt;
+&lt;li&gt;It doesn’t take that much time - I just watched a little less Netflix.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;While I have yet to come across a question I need to ask, I do have a few points about benefits of and tips for answering questions on SO.&lt;/p&gt;
+&lt;div id=&#34;benifits-to-answering-questions&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Benifits to Answering Questions&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;It’s actually fun - really…and frightfully addictive (maybe that’s not actually a benefit).&lt;/li&gt;
+&lt;li&gt;You learn a lot - answering questions often required a little research and I learned a lot from this process. Comparing my solutions to others also helped - there were times I found another user’s solution to be more elegant than mine…though there is some competitiveness on the site, I took this as a learning experience.&lt;/li&gt;
+&lt;li&gt;Giving back to the community - if you take, you should try to give back at least a little.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tips-for-answering-questions&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Tips for Answering Questions&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Stick to questions you think you won’t need a lot of time to answer. You will still learn from the process of answering and you’ll be more likely to give a good solution - increasing your chance of up-votes.&lt;/li&gt;
+&lt;li&gt;There is some pressure to be the first to answer - don’t take this too seriously. Do your best to provide a good solution, even if others have answered already. There is a good chance you will still get an up-vote and earn some rep.&lt;/li&gt;
+&lt;li&gt;If there are other solutions, make sure yours is significantly different - before I had the 50 rep needed to comment, I added to another user’s solution to make it more general. I genuinely felt the generality better addressed the question, but this really should have been an edit or a comment, not another solution. It only served to make the original solution provider mad - so I deleted it.&lt;/li&gt;
+&lt;li&gt;Be nice - In general, other users are nice to you if you are nice to them. Don’t act like your solution is the best and be respectful of questions and answers - there will be differences in opinions, but you should learn from others’ solutions.&lt;/li&gt;
+&lt;li&gt;Provide reproducible answers - just as questions should be reproducible, it helps if your answers are too.&lt;/li&gt;
+&lt;li&gt;Provide some output from your solutions (like numeric results or plots). This way - users can see your results without running your code and quickly assess the solution.&lt;/li&gt;
+&lt;li&gt;Provide answers to more than one community. I was on both SO and &lt;a href=&#34;https://stats.stackexchange.com/&#34;&gt;Cross Validated&lt;/a&gt;. Cross Validated is more about stats questions in general, not so much coding. It was fun to answer questions there too. Also, as you build rep in one community you can earn an ‘Association Bonus’ in another. This will get you pass the 50 rep you need to comment - which is a very nice privilege to have.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Yes, it is possible to build rep on SO</title>
+      <link>/post/yes-it-is-possible-to-build-rep-on-so/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/yes-it-is-possible-to-build-rep-on-so/</guid>
+      <description>
+
+&lt;p&gt;Since first using R about a decade ago, I have been a consistent consumer of information from &lt;a href=&#34;https://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;stackoverflow (SO)&lt;/a&gt;. It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. Reasons for not asking questions essentially were:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Pretty much 99% of the questions I had, I could already find an answer to (on SO or elsewhere).&lt;/li&gt;
+&lt;li&gt;For the other 1%, I felt that there had to be an easy solution I missed and I&amp;rsquo;d get crushed for asking a stupid question. In these cases I resorted to sheer grit to find a solution and asking friends who I knew wouldn&amp;rsquo;t call me stupid.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Reasons for not answering questions essentially were:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I had 1 rep, so who would listen?&lt;/li&gt;
+&lt;li&gt;I had 1 rep, so I couldn&amp;rsquo;t comment to clarify questions.&lt;/li&gt;
+&lt;li&gt;I had 1 rep, someone else with more rep would provide an answer.&lt;/li&gt;
+&lt;li&gt;Time (or selfishness) - I didn&amp;rsquo;t feel I had the time to  answer questions that didn&amp;rsquo;t directly deal with the projects I was working on.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;When it comes down to it, I was consuming free information and not being a contributor to said information. Recently however, I have had a surprisingly large amount of fun answering/asking questions on the relatively new &lt;a href=&#34;https://community.rstudio.com/&#34; target=&#34;_blank&#34;&gt;Rstudio Community&lt;/a&gt;. This experience has been enjoyable and educational and I credit it with the straw that finally pushed me to become more active on SO. The timing could not have been more perfect since I had a winter break from work coming and was looking for something to fill some free time. Within a matter of a few days, I went from 1 rep, to 311, just by answering a few questions.&lt;/p&gt;
+
+&lt;p&gt;[repPage]()
+Add picture&amp;hellip;of my rep page.&lt;/p&gt;
+
+&lt;p&gt;It turns out that:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;People listened regardless of my rep as long as I provided a good solution.&lt;/li&gt;
+&lt;li&gt;There are plenty of questions that you don&amp;rsquo;t need to comment on, and getting the 50 rep to comment is relatively easy.&lt;/li&gt;
+&lt;li&gt;My solution was often either the only one provided or was well received compared to other solutions from those with lots more rep than me.&lt;/li&gt;
+&lt;li&gt;It doesn&amp;rsquo;t take that much time - I just watched a little less Netflix.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While I have yet to come across a question I need to ask, I do have a few points about benefits of and tips for answering questions on SO.&lt;/p&gt;
+
+&lt;h1 id=&#34;benifits-to-answering-questions&#34;&gt;Benifits to Answering Questions&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;It&amp;rsquo;s actually fun - really&amp;hellip;and frightfully addictive (maybe that&amp;rsquo;s not actually a benefit).&lt;/li&gt;
+&lt;li&gt;You learn a lot - answering questions often required a little research and I learned a lot from this process. Comparing my solutions to others also helped - there were times I found another user&amp;rsquo;s solution to be more elegant than mine&amp;hellip;though there is some competitiveness on the site, I took this as a learning experience.&lt;/li&gt;
+&lt;li&gt;Giving back to the community - if you take, you should try to give back at least a little.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;tips-for-answering-questions&#34;&gt;Tips for Answering Questions&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Stick to questions you think you won&amp;rsquo;t need a lot of time to answer. You will still learn from the process of answering and you&amp;rsquo;ll be more likely to give a good solution - increasing your chance of up-votes.&lt;/li&gt;
+&lt;li&gt;There is some pressure to be the first to answer - don&amp;rsquo;t take this too seriously. Do your best to provide a good solution, even if others have answered already. There is a good chance you will still get an up-vote and earn some rep.&lt;/li&gt;
+&lt;li&gt;If there are other solutions, make sure yours is significantly different - before I had the 50 rep needed to comment, I added to another user&amp;rsquo;s solution to make it more general. I genuinely felt the generality better addressed the question, but this really should have been an edit or a comment, not another solution. It only served to make the original solution provider mad - so I deleted it.&lt;/li&gt;
+&lt;li&gt;Be nice - In general, other users are nice to you if you are nice to them. Don&amp;rsquo;t act like your solution is the best and be respectful of questions and answers - there will be differences in opinions, but you should learn from others&amp;rsquo; solutions.&lt;/li&gt;
+&lt;li&gt;Provide reproducible answers - just as questions should be reproducible, it helps if your answers are too.&lt;/li&gt;
+&lt;li&gt;Provide some output from your solutions (like numeric results or plots). This way - users can see your results without running your code and quickly assess the solution.&lt;/li&gt;
+&lt;li&gt;Provide answers to more than one community. I was on both SO and &lt;a href=&#34;https://stats.stackexchange.com/&#34; target=&#34;_blank&#34;&gt;Cross Validated&lt;/a&gt;. Cross Validated is more about stats questions in general, not so much coding. It was fun to answer questions there too. Also, as you build rep in one community you can earn an &amp;lsquo;Association Bonus&amp;rsquo; in another. This will get you pass the 50 rep you need to comment - which is a very nice privilege to have.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Yes, it is possible to build rep on SO</title>
+      <link>/post/yes-it-is-possible-to-build-rep-on-so/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/yes-it-is-possible-to-build-rep-on-so/</guid>
+      <description>
+
+&lt;p&gt;Since first using R about a decade ago, I have been a consistent consumer of information from &lt;a href=&#34;https://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;stackoverflow (SO)&lt;/a&gt;. It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. Reasons for not asking questions essentially were:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Pretty much 99% of the questions I had, I could already find an answer to (on SO or elsewhere).&lt;/li&gt;
+&lt;li&gt;For the other 1%, I felt that there had to be an easy solution I missed and I&amp;rsquo;d get crushed for asking a stupid question. In these cases I resorted to sheer grit to find a solution and asking friends who I knew wouldn&amp;rsquo;t call me stupid.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Reasons for not answering questions essentially were:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I had 1 rep, so who would listen?&lt;/li&gt;
+&lt;li&gt;I had 1 rep, so I couldn&amp;rsquo;t comment to clarify questions.&lt;/li&gt;
+&lt;li&gt;I had 1 rep, someone else with more rep would provide an answer.&lt;/li&gt;
+&lt;li&gt;Time (or selfishness) - I didn&amp;rsquo;t feel I had the time to  answer questions that didn&amp;rsquo;t directly deal with the projects I was working on.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;When it comes down to it, I was consuming free information and not being a contributor to said information. Recently however, I have had a surprisingly large amount of fun answering/asking questions on the relatively new &lt;a href=&#34;https://community.rstudio.com/&#34; target=&#34;_blank&#34;&gt;Rstudio Community&lt;/a&gt;. This experience has been enjoyable and educational and I credit it with the straw that finally pushed me to become more active on SO. The timing could not have been more perfect since I had a winter break from work coming and was looking for something to fill some free time. Within a matter of a few days, I went from 1 rep, to 311, just by answering a few questions.&lt;/p&gt;
+
+&lt;p&gt;[repPage]()
+Add picture&amp;hellip;of my rep page.&lt;/p&gt;
+
+&lt;p&gt;It turns out that:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;People listened regardless of my rep as long as I provided a good solution.&lt;/li&gt;
+&lt;li&gt;There are plenty of questions that you don&amp;rsquo;t need to comment on, and getting the 50 rep to comment is relatively easy.&lt;/li&gt;
+&lt;li&gt;My solution was often either the only one provided or was well received compared to other solutions from those with lots more rep than me.&lt;/li&gt;
+&lt;li&gt;It doesn&amp;rsquo;t take that much time - I just watched a little less Netflix.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While I have yet to come across a question I need to ask, I do have a few points about benefits of and tips for answering questions on SO.&lt;/p&gt;
+
+&lt;h1 id=&#34;benifits-to-answering-questions&#34;&gt;Benifits to Answering Questions&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;It&amp;rsquo;s actually fun - really&amp;hellip;and frightfully addictive (maybe that&amp;rsquo;s not actually a benefit).&lt;/li&gt;
+&lt;li&gt;You learn a lot - answering questions often required a little research and I learned a lot from this process. Comparing my solutions to others also helped - there were times I found another user&amp;rsquo;s solution to be more elegant than mine&amp;hellip;though there is some competitiveness on the site, I took this as a learning experience.&lt;/li&gt;
+&lt;li&gt;Giving back to the community - if you take, you should try to give back at least a little.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;tips-for-answering-questions&#34;&gt;Tips for Answering Questions&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Stick to questions you think you won&amp;rsquo;t need a lot of time to answer. You will still learn from the process of answering and you&amp;rsquo;ll be more likely to give a good solution - increasing your chance of up-votes.&lt;/li&gt;
+&lt;li&gt;There is some pressure to be the first to answer - don&amp;rsquo;t take this too seriously. Do your best to provide a good solution, even if others have answered already. There is a good chance you will still get an up-vote and earn some rep.&lt;/li&gt;
+&lt;li&gt;If there are other solutions, make sure yours is significantly different - before I had the 50 rep needed to comment, I added to another user&amp;rsquo;s solution to make it more general. I genuinely felt the generality better addressed the question, but this really should have been an edit or a comment, not another solution. It only served to make the original solution provider mad - so I deleted it.&lt;/li&gt;
+&lt;li&gt;Be nice - In general, other users are nice to you if you are nice to them. Don&amp;rsquo;t act like your solution is the best and be respectful of questions and answers - there will be differences in opinions, but you should learn from others&amp;rsquo; solutions.&lt;/li&gt;
+&lt;li&gt;Provide reproducible answers - just as questions should be reproducible, it helps if your answers are too.&lt;/li&gt;
+&lt;li&gt;Provide some output from your solutions (like numeric results or plots). This way - users can see your results without running your code and quickly assess the solution.&lt;/li&gt;
+&lt;li&gt;Provide answers to more than one community. I was on both SO and &lt;a href=&#34;https://stats.stackexchange.com/&#34; target=&#34;_blank&#34;&gt;Cross Validated&lt;/a&gt;. Cross Validated is more about stats questions in general, not so much coding. It was fun to answer questions there too. Also, as you build rep in one community you can earn an &amp;lsquo;Association Bonus&amp;rsquo; in another. This will get you pass the 50 rep you need to comment - which is a very nice privilege to have.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A Quick Intro to Robust Bayesian Models via Conditioning on Insufficient Statistics</title>
       <link>/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
