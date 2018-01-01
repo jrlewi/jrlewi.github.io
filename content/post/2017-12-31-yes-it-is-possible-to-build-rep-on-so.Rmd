@@ -31,7 +31,7 @@ When it comes down to it, I was consuming free information and not being a contr
 
 # RStudio Community and Rebuttals to the Above Reasons. 
 
-Recently, I have had a surprisingly large amount of fun answering/asking questions on the relatively new [Rstudio Community](https://community.rstudio.com/). This experience has been enjoyable and educational and I credit it with the straw that finally pushed me to become more active on SO. The timing could not have been more perfect since I had a winter break from work coming and was looking for something to fill some free time. Within a matter of a few days, I went from 1 rep, to 311, just by answering a few questions.
+Recently, I have had a surprisingly large amount of fun answering/asking questions on the relatively new [Rstudio Community](https://community.rstudio.com/). The community has an extremely open and friendly atmosphere which has provided an enjoyable and educational experience. I credit it with the straw that finally pushed me to become more active on SO. The timing could not have been more perfect since I had a winter break from work coming and was looking for something to fill some free time. Within a matter of a few days, I went from 1 rep, to 311, just by answering a few questions.
 
 
 
