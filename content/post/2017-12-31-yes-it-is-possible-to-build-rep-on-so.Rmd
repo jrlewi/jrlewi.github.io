@@ -63,7 +63,7 @@ Here are some tips I have learned:
 
 1. When starting out, stick to questions you think you won't need a lot of time to answer. You will still learn from the process and you'll be more likely to give a good solution and get up-votes. 
 
-2. There is some pressure to be the first to answer - don't take this too seriously. Do your best to provide a good solution, even if others have answered already. There is a good chance you will still up-votes and earn some rep.
+2. There is some pressure to be the first to answer - don't take this too seriously. Do your best to provide a good solution, even if others have answered already. There is a good chance you will still receive up-votes and earn some rep.
 
 3. If there are other solutions, make sure yours is significantly different - before I had the 50 rep needed to comment, I added to another user's solution to make it more general. I genuinely felt my contribution better addressed the question, but this really should have been an edit or a comment, not another solution. It only served to make the original solution provider mad - so I deleted it. 
 

@@ -63,7 +63,7 @@
 &lt;p&gt;Here are some tips I have learned:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;&lt;p&gt;When starting out, stick to questions you think you won’t need a lot of time to answer. You will still learn from the process and you’ll be more likely to give a good solution and get up-votes.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;There is some pressure to be the first to answer - don’t take this too seriously. Do your best to provide a good solution, even if others have answered already. There is a good chance you will still up-votes and earn some rep.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;There is some pressure to be the first to answer - don’t take this too seriously. Do your best to provide a good solution, even if others have answered already. There is a good chance you will still receive up-votes and earn some rep.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;If there are other solutions, make sure yours is significantly different - before I had the 50 rep needed to comment, I added to another user’s solution to make it more general. I genuinely felt my contribution better addressed the question, but this really should have been an edit or a comment, not another solution. It only served to make the original solution provider mad - so I deleted it.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Be nice - In general, other users are nice to you if you are nice to them. Don’t act like your solution is the best and be respectful of questions and answers. You should learn from others’ solutions. If people are mean, don’t take it personally. As long as you act in good faith, this is their problem, not yours.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Provide reproducible answers - just as questions should be reproducible, it helps if your answers are too.&lt;/p&gt;&lt;/li&gt;
@@ -110,6 +110,15 @@
       <pubDate>Mon, 31 Jul 2017 14:45:29 -0700</pubDate>
       
       <guid>/talk/2017_jsm_handling_missing_data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Brief Intro to Projects within Rstudio</title>
+      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
+      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
+      
+      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
       <description></description>
     </item>
     
