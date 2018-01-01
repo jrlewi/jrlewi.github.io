@@ -75,7 +75,7 @@ Here are some tips I have learned:
 
 7. Some questions are marked as duplicates. While it is important to not have a bunch of repeat questions, many times there is still something different between the current question and the linked duplicate question. If this is the case, still try to address the question and be sure not to copy previous answers. 
 
-8. Provide answers to more than one community. I've been looking on both SO and [Cross Validated](https://stats.stackexchange.com/). Cross Validated is more about stats questions in general, not so much coding. It was fun to answer questions there too. Also, as you build rep in one community you can earn an 'Association Bonus' in another. This will get you pass the 50 rep you need to comment - which is a very nice privilege to have.
+8. Provide answers to more than one community. I've been looking on both SO and [Cross Validated](https://stats.stackexchange.com/). Cross Validated is more about stats questions in general, not so much coding. It was fun to answer questions there too. Also, as you build rep in one community you can earn an 'Association Bonus' in another. This will get you past the 50 rep you need to comment - which is a very nice privilege to have.
 
 
 While stackoverflow can be intimidating, I wish I began my active participation much sooner. I am sure I would be a better coder now if I had. Plus - it's nice to have your solution recognized and know that you helped someone out. 
