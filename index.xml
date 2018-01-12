@@ -16,12 +16,12 @@
       <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/yes-it-is-possible-to-build-rep-on-so/</guid>
-      <description>&lt;p&gt;Since starting to use R about a decade ago, I have been a consistent consumer of information from &lt;a href=&#34;https://stackoverflow.com/&#34;&gt;stackoverflow (SO)&lt;/a&gt;. It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. In this post I will give some (bad) reasons why I was not actively participating, what finally pushed me to participate, and some benefits and tips for answering questions on SO.&lt;/p&gt;
-&lt;div id=&#34;bad-reasons-for-not-actively-participating&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;(Bad) Reasons for not Actively Participating&lt;/h1&gt;
+      <description>&lt;p&gt;Since starting to use R about a decade ago, I have been a consistent consumer of information from &lt;a href=&#34;https://stackoverflow.com/&#34;&gt;stackoverflow (SO)&lt;/a&gt;. It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. In this post I will give some (mostly bad) reasons why I was not actively participating, what finally pushed me to participate, and some benefits and tips for answering questions on SO.&lt;/p&gt;
+&lt;div id=&#34;reasons-for-not-actively-participating&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Reasons for not Actively Participating&lt;/h1&gt;
 &lt;p&gt;Reasons for not asking questions essentially were:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Pretty much 99% of the questions I had, I could already find an answer to (on SO or elsewhere).&lt;/li&gt;
+&lt;li&gt;Pretty much 99% of the questions I had, I could already find an answer to (on SO or elsewhere). Note: this is one of the great things about SO and it is not a good thing to repeat questions - you’ll likely lose rep for this.&lt;/li&gt;
 &lt;li&gt;For the other 1%, I felt that there had to be an easy solution I missed and I’d get crushed for asking a stupid question. In these cases I resorted to sheer grit to find a solution and asking friends who I knew wouldn’t call me stupid.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Reasons for not answering questions essentially were:&lt;/p&gt;
@@ -110,6 +110,15 @@
       <pubDate>Mon, 31 Jul 2017 14:45:29 -0700</pubDate>
       
       <guid>/talk/2017_jsm_handling_missing_data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Brief Intro to Projects within Rstudio</title>
+      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
+      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
+      
+      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
       <description></description>
     </item>
     
