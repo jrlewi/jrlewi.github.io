@@ -11,13 +11,13 @@ categories:
 - stackoverflow
 ---
 
-Since starting to  use R about a decade ago, I have been a consistent consumer of information from [stackoverflow (SO)](https://stackoverflow.com/). It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. In this post I will give some (bad) reasons why I was not actively participating, what finally pushed me to participate, and some benefits and tips for answering questions on SO.
+Since starting to  use R about a decade ago, I have been a consistent consumer of information from [stackoverflow (SO)](https://stackoverflow.com/). It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. In this post I will give some (mostly bad) reasons why I was not actively participating, what finally pushed me to participate, and some benefits and tips for answering questions on SO.
 
-# (Bad) Reasons for not Actively Participating
+# Reasons for not Actively Participating
 
 Reasons for not asking questions essentially were:
 
-1. Pretty much 99% of the questions I had, I could already find an answer to (on SO or elsewhere).
+1. Pretty much 99% of the questions I had, I could already find an answer to (on SO or elsewhere). Note: this is one of the great things about SO and it is not a good thing to repeat questions - you'll likely lose rep for this. 
 2. For the other 1%, I felt that there had to be an easy solution I missed and I'd get crushed for asking a stupid question. In these cases I resorted to sheer grit to find a solution and asking friends who I knew wouldn't call me stupid. 
 
 Reasons for not answering questions essentially were: 
@@ -76,7 +76,6 @@ Here are some tips I have learned:
 7. Some questions are marked as duplicates. While it is important to not have a bunch of repeat questions, many times there is still something different between the current question and the linked duplicate question. If this is the case, still try to address the question and be sure not to copy previous answers. 
 
 8. Provide answers to more than one community. I've been looking on both SO and [Cross Validated](https://stats.stackexchange.com/). Cross Validated is more about stats questions in general, not so much coding. It was fun to answer questions there too. Also, as you build rep in one community you can earn an 'Association Bonus' in another. This will get you past the 50 rep you need to comment - which is a very nice privilege to have.
-
 
 While stackoverflow can be intimidating, I wish I began my active participation much sooner. I am sure I would be a better coder now if I had. Plus - it's nice to have your solution recognized and know that you helped someone out. 
 
