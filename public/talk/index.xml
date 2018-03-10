@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 John R. Lewis</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Statistical Applications at Sandia</title>
@@ -25,6 +27,15 @@
       <pubDate>Mon, 31 Jul 2017 14:45:29 -0700</pubDate>
       
       <guid>/talk/2017_jsm_handling_missing_data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Brief Intro to Projects within Rstudio</title>
+      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
+      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
+      
+      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
       <description></description>
     </item>
     
