@@ -13,7 +13,7 @@ abstract = "Non-persistent collection of marked point process data in space and 
 abstract_short = ""
 
 # Name of event and optional event URL.
-event = "Statistics Colloquium"
+event = "UNM Statistics Colloquium"
 event_url = "http://math.unm.edu/news-events/events/statistics-colloquium-14"
 
 # Location of event.
