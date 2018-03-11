@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Bayesian Modeling of Self-Exciting Marked Point Processes with Missing Histories</title>
+      <link>/talk/2018_unm_stat_col/</link>
+      <pubDate>Tue, 06 Mar 2018 14:45:29 -0700</pubDate>
+      
+      <guid>/talk/2018_unm_stat_col/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Statistical Applications at Sandia</title>
       <link>/talk/2017_stat_apps_uiuc/</link>
       <pubDate>Wed, 27 Sep 2017 14:36:40 -0700</pubDate>
@@ -27,15 +36,6 @@
       <pubDate>Mon, 31 Jul 2017 14:45:29 -0700</pubDate>
       
       <guid>/talk/2017_jsm_handling_missing_data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Brief Intro to Projects within Rstudio</title>
-      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
-      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
-      
-      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
       <description></description>
     </item>
     

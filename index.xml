@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Bayesian Modeling of Self-Exciting Marked Point Processes with Missing Histories</title>
+      <link>/talk/2018_unm_stat_col/</link>
+      <pubDate>Tue, 06 Mar 2018 14:45:29 -0700</pubDate>
+      
+      <guid>/talk/2018_unm_stat_col/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Yes, it is possible to build rep on SO</title>
       <link>/post/yes-it-is-possible-to-build-rep-on-so/</link>
       <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
@@ -110,15 +119,6 @@
       <pubDate>Mon, 31 Jul 2017 14:45:29 -0700</pubDate>
       
       <guid>/talk/2017_jsm_handling_missing_data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Brief Intro to Projects within Rstudio</title>
-      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
-      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
-      
-      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
       <description></description>
     </item>
     
