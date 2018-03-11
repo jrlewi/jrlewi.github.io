@@ -123,15 +123,6 @@
     </item>
     
     <item>
-      <title>A Brief Intro to Projects within Rstudio</title>
-      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
-      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
-      
-      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Uncertainty Quantification and Comparison of Weld Residual Stress Measurements and  Predictions</title>
       <link>/publication/pvp_uq_wrs/</link>
       <pubDate>Sat, 01 Jul 2017 19:39:17 -0700</pubDate>
@@ -431,6 +422,15 @@ legend(&amp;#39;topright&amp;#39;, col = c(1,2), lty = 1, legend = c(&amp;#39;A&
       <pubDate>Sat, 01 Dec 2012 20:21:06 -0700</pubDate>
       
       <guid>/publication/robust_inference_blended/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust Inference via the Blended Paradigm</title>
+      <link>/talk/2012_jsm_blended_paradigm/</link>
+      <pubDate>Sun, 29 Jul 2012 15:42:40 -0700</pubDate>
+      
+      <guid>/talk/2012_jsm_blended_paradigm/</guid>
       <description></description>
     </item>
     
