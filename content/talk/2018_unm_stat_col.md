@@ -1,6 +1,5 @@
 +++
-title = "Bayesian Modeling of Self-Exciting
-Marked Point Processes with Missing Histories"
+title = "Bayesian Modeling of Self-Exciting Marked Point Processes with Missing Histories"
 date = 2018-03-06T14:45:29-07:00  # Schedule page publish date.
 draft = false
 
