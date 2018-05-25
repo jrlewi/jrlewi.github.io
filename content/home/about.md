@@ -33,7 +33,7 @@ weight = 1
   year = 2008
   
 [[education.courses]]
-  course = "BA, Education & BS, Maethematics & Statistics"
+  course = "BA, Education & BS, Mathematics & Statistics"
   institution = "Miami University"
   year = 2006
 
