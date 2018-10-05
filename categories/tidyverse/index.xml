@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tidyverse on John R. Lewis</title>
+    <link>/categories/tidyverse/</link>
+    <description>Recent content in Tidyverse on John R. Lewis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 John R. Lewis</copyright>
+    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Storing and Plotting Functional Data using Tibble</title>
+      <link>/post/storing-and-plotting-functional-data-using-tibble/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/storing-and-plotting-functional-data-using-tibble/</guid>
+      <description>The tibble package within the the tidyverse provides ‘a modern take on data frames.’ It’s loaded with nice features, one of which is the ability to store list-columns. List-columns provide a concise way to store lists within a row of a data frame. In particular, this is useful for storing functional data because a common feature in such data is that each function is not collected at the same number of points.</description>
+    </item>
+    
+  </channel>
+</rss>

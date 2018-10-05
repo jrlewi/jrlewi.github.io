@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Restricted likelihood on John R. Lewis</title>
+    <link>/tags/restricted-likelihood/</link>
+    <description>Recent content in Restricted likelihood on John R. Lewis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 John R. Lewis</copyright>
+    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/restricted-likelihood/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Quick Intro to Robust Bayesian Models via Conditioning on Insufficient Statistics</title>
+      <link>/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</guid>
+      <description>Conditioning on robust summaries of the data in a Bayesian model is one way to achieve robustness to model miss-specification. I have called this the “restricted likelihood” here and here since the full data likelihood is replaced with the likelihood conditioned on only the robust summary (i.e. a restricted likelihood).
+One of the easiest examples to conceptualize is outliers in a univariate setting. Suppose the true data generating mechanism is a contaminated normal:</description>
+    </item>
+    
+  </channel>
+</rss>
