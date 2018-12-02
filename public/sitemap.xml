@@ -215,7 +215,7 @@
     
     <url>
     
-      <loc>/tags/brlm/</loc>
+      <loc>/categories/brlm/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -225,7 +225,7 @@
     
     <url>
     
-      <loc>/categories/brlm/</loc>
+      <loc>/tags/brlm/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -245,7 +245,7 @@
     
     <url>
     
-      <loc>/tags/functional-data/</loc>
+      <loc>/categories/functional-data/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -255,7 +255,7 @@
     
     <url>
     
-      <loc>/categories/functional-data/</loc>
+      <loc>/tags/functional-data/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -285,16 +285,6 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
-      <lastmod>2017-12-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/categories/r/</loc>
       <lastmod>2017-12-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -305,8 +295,8 @@
     
     <url>
     
-      <loc>/tags/restricted-likelihood/</loc>
-      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+      <loc>/tags/r/</loc>
+      <lastmod>2017-12-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -325,8 +315,8 @@
     
     <url>
     
-      <loc>/tags/stackoverflow/</loc>
-      <lastmod>2017-12-31T00:00:00+00:00</lastmod>
+      <loc>/tags/restricted-likelihood/</loc>
+      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -336,6 +326,16 @@
     <url>
     
       <loc>/categories/stackoverflow/</loc>
+      <lastmod>2017-12-31T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/stackoverflow/</loc>
       <lastmod>2017-12-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -355,7 +355,7 @@
     
     <url>
     
-      <loc>/tags/tidyverse/</loc>
+      <loc>/categories/tidyverse/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -365,7 +365,7 @@
     
     <url>
     
-      <loc>/categories/tidyverse/</loc>
+      <loc>/tags/tidyverse/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
