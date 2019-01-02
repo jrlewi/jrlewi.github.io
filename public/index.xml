@@ -150,6 +150,15 @@
     </item>
     
     <item>
+      <title>A Brief Intro to Projects within Rstudio</title>
+      <link>/talk/2017_rprojects_stat_science_stat_seminar/</link>
+      <pubDate>Tue, 18 Jul 2017 15:02:20 -0700</pubDate>
+      
+      <guid>/talk/2017_rprojects_stat_science_stat_seminar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Uncertainty Quantification and Comparison of Weld Residual Stress Measurements and  Predictions</title>
       <link>/publication/pvp_uq_wrs/</link>
       <pubDate>Sat, 01 Jul 2017 19:39:17 -0700</pubDate>
@@ -423,15 +432,6 @@ legend(&amp;#39;topright&amp;#39;, col = c(1,2), lty = 1, legend = c(&amp;#39;A&
       <guid>/publication/brlm/</guid>
       <description>&lt;p&gt;A technical report version of this work is available on the pdf link. It is currently still under revision for publication.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>The Blended Paradigm: Robust Bayesian Modeling using Non-Sufficient Statistics</title>
-      <link>/talk/2014_cooley/</link>
-      <pubDate>Tue, 08 Apr 2014 15:27:29 -0700</pubDate>
-      
-      <guid>/talk/2014_cooley/</guid>
-      <description></description>
     </item>
     
   </channel>
