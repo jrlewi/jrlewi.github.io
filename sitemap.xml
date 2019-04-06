@@ -233,48 +233,7 @@
     
     <url>
     
-      <loc>/tags/brlm/</loc>
-      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/brlm/</loc>
-      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/categories/</loc>
-      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/functional-data/</loc>
-      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/functional-data/</loc>
-      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -323,6 +282,56 @@
     
     <url>
     
+      <loc>/tags/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/brlm/</loc>
+      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/brlm/</loc>
+      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/functional-data/</loc>
+      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/functional-data/</loc>
+      <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/restricted-likelihood/</loc>
       <lastmod>2017-05-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -355,16 +364,6 @@
     
       <loc>/categories/stackoverflow/</loc>
       <lastmod>2017-12-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

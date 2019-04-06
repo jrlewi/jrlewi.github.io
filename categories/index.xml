@@ -7,28 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 John R. Lewis</copyright>
-    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Brlm</title>
-      <link>/categories/brlm/</link>
-      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/brlm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Functional data</title>
-      <link>/categories/functional-data/</link>
-      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/functional-data/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>R</title>
@@ -40,7 +21,25 @@
     </item>
     
     <item>
-      <title>Restricted likelihood</title>
+      <title>brlm</title>
+      <link>/categories/brlm/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/brlm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional data</title>
+      <link>/categories/functional-data/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/functional-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>restricted likelihood</title>
       <link>/categories/restricted-likelihood/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
@@ -49,7 +48,7 @@
     </item>
     
     <item>
-      <title>Stackoverflow</title>
+      <title>stackoverflow</title>
       <link>/categories/stackoverflow/</link>
       <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
       
@@ -58,7 +57,7 @@
     </item>
     
     <item>
-      <title>Tidyverse</title>
+      <title>tidyverse</title>
       <link>/categories/tidyverse/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
