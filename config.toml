@@ -252,7 +252,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "CV"
-  url = "static/pdf/JRL_CV.pdf"
+  url = {{% staticref "pdf/JRL_CV.pdf" %}}My CV{{% /staticref %}}
   weight = 5
 
 #[[menu.main]]
