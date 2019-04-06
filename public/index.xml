@@ -61,7 +61,10 @@
       <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/yes-it-is-possible-to-build-rep-on-so/</guid>
-      <description>&lt;p&gt;Since starting to use R about a decade ago, I have been a consistent consumer of information from &lt;a href=&#34;https://stackoverflow.com/&#34;&gt;stackoverflow (SO)&lt;/a&gt;. It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. In this post I will give some (mostly bad) reasons why I was not actively participating, what finally pushed me to participate, and some benefits and tips for answering questions on SO.&lt;/p&gt;
+      <description>
+
+
+&lt;p&gt;Since starting to use R about a decade ago, I have been a consistent consumer of information from &lt;a href=&#34;https://stackoverflow.com/&#34;&gt;stackoverflow (SO)&lt;/a&gt;. It is an invaluable resource and I am grateful to those who take the time to ask good questions and provide good answers. I have also felt a little guilty for not giving back by being an active participant. In this post I will give some (mostly bad) reasons why I was not actively participating, what finally pushed me to participate, and some benefits and tips for answering questions on SO.&lt;/p&gt;
 &lt;div id=&#34;reasons-for-not-actively-participating&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Reasons for not Actively Participating&lt;/h1&gt;
 &lt;p&gt;Reasons for not asking questions essentially were:&lt;/p&gt;
@@ -164,7 +167,10 @@
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/a-quick-intro-to-robust-bayesian-models-via-conditioning-on-insufficient-statistics/</guid>
-      <description>&lt;p&gt;Conditioning on robust summaries of the data in a Bayesian model is one way to achieve robustness to model miss-specification. I have called this the “restricted likelihood” &lt;a href=&#34;http://www.stat.osu.edu/~yklee/mss/tr878.pdf&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;amp;disposition=inline&#34;&gt;here&lt;/a&gt; since the full data likelihood is replaced with the likelihood conditioned on only the robust summary (i.e. a restricted likelihood).&lt;/p&gt;
+      <description>
+
+
+&lt;p&gt;Conditioning on robust summaries of the data in a Bayesian model is one way to achieve robustness to model miss-specification. I have called this the “restricted likelihood” &lt;a href=&#34;http://www.stat.osu.edu/~yklee/mss/tr878.pdf&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;amp;disposition=inline&#34;&gt;here&lt;/a&gt; since the full data likelihood is replaced with the likelihood conditioned on only the robust summary (i.e. a restricted likelihood).&lt;/p&gt;
 &lt;p&gt;One of the easiest examples to conceptualize is outliers in a univariate setting. Suppose the true data generating mechanism is a contaminated normal:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_1, y_2, \dots, y_n \sim (1-p)N(\mu, \sigma^2) + pN(\mu, c\sigma^2)\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;with &lt;span class=&#34;math inline&#34;&gt;\(c&amp;gt;1\)&lt;/span&gt; and we are interested in estimating &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt;. Since we don’t know the data generating mechanism exactly we just decide to fit the simple normal Bayesian model:&lt;/p&gt;
@@ -322,7 +328,10 @@ result &amp;lt;- reshape2::melt(result, variable.name = &amp;#39;posterior&amp;#
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/storing-and-plotting-functional-data-using-tibble/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html&#34;&gt;tibble package&lt;/a&gt; within the &lt;a href=&#34;http://tidyverse.org/&#34;&gt;the tidyverse&lt;/a&gt; provides ‘a modern take on data frames.’ It’s loaded with nice features, one of which is the ability to store list-columns. List-columns provide a concise way to store lists within a row of a data frame. In particular, this is useful for storing functional data because a common feature in such data is that each function is not collected at the same number of points. As an example, let’s simulate some sinusoids:&lt;/p&gt;
+      <description>
+
+
+&lt;p&gt;The &lt;a href=&#34;https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html&#34;&gt;tibble package&lt;/a&gt; within the &lt;a href=&#34;http://tidyverse.org/&#34;&gt;the tidyverse&lt;/a&gt; provides ‘a modern take on data frames.’ It’s loaded with nice features, one of which is the ability to store list-columns. List-columns provide a concise way to store lists within a row of a data frame. In particular, this is useful for storing functional data because a common feature in such data is that each function is not collected at the same number of points. As an example, let’s simulate some sinusoids:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 ## Loading tidyverse: ggplot2
 ## Loading tidyverse: tibble

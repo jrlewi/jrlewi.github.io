@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.48" />
+  <meta name="generator" content="Hugo 0.54.0" />
   <meta name="author" content="John R. Lewis">
   <meta name="description" content="Senior Member of Technical Staff">
 
@@ -315,7 +315,10 @@
 
 
       <div class="article-style" itemprop="articleBody">
-        <p>Conditioning on robust summaries of the data in a Bayesian model is one way to achieve robustness to model miss-specification. I have called this the “restricted likelihood” <a href="http://www.stat.osu.edu/~yklee/mss/tr878.pdf">here</a> and <a href="https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;disposition=inline">here</a> since the full data likelihood is replaced with the likelihood conditioned on only the robust summary (i.e. a restricted likelihood).</p>
+        
+
+
+<p>Conditioning on robust summaries of the data in a Bayesian model is one way to achieve robustness to model miss-specification. I have called this the “restricted likelihood” <a href="http://www.stat.osu.edu/~yklee/mss/tr878.pdf">here</a> and <a href="https://etd.ohiolink.edu/!etd.send_file?accession=osu1407505392&amp;disposition=inline">here</a> since the full data likelihood is replaced with the likelihood conditioned on only the robust summary (i.e. a restricted likelihood).</p>
 <p>One of the easiest examples to conceptualize is outliers in a univariate setting. Suppose the true data generating mechanism is a contaminated normal:</p>
 <p><span class="math display">\[y_1, y_2, \dots, y_n \sim (1-p)N(\mu, \sigma^2) + pN(\mu, c\sigma^2)\]</span></p>
 <p>with <span class="math inline">\(c&gt;1\)</span> and we are interested in estimating <span class="math inline">\(\mu\)</span>. Since we don’t know the data generating mechanism exactly we just decide to fit the simple normal Bayesian model:</p>
