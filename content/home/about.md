@@ -52,5 +52,5 @@ weight = 1
 
 # Biography
 
-I am a senior member of the technical staff at Sandia National Laboratories. I earned a Ph.D. in Statistics from The Ohio State University in 2014 where I developed 'Restricted Likelihood Methods' to condition on robust summary statistics in Bayesian models. Current work focuses on a number of areas including analysis of complex computer models, functional data analysis, space-time models, inverse problems. {{% staticref "pdf/JRL_CV.pdf" %}}My CV{{% /staticref %}}
+I am currently a senior member of the technical staff at Sandia National Laboratories. I earned a Ph.D. in Statistics from The Ohio State University in 2014 where I developed 'Restricted Likelihood Methods' to condition on robust summary statistics in Bayesian models. Current work focuses on a number of areas including analysis of complex computer models, functional data analysis, space-time models, inverse problems. {{% staticref "pdf/JRL_CV.pdf" %}}My CV{{% /staticref %}}
 
